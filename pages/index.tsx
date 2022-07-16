@@ -7,7 +7,7 @@ import { Toolbox } from '../components/Toolbox';
 import BgImage from '../assets/background.jpeg';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const App: NextPage = () => {
 
   return (
     <Container sx={{ backgroundImage: `url(${BgImage.src})`, backgroundSize: "100% 100%", }}>
@@ -25,4 +25,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default App;
