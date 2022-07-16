@@ -18,7 +18,9 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 - [ ] Find better nav bar transitions
 
 ### Credits
-Made possible thanks to the following free resources
+Made possible thanks to the following free asset resources
  - [Devicon](https://devicon.dev/)
  - [AvatarMaker](https://avatarmaker.net/)
  - [SetAsWall](https://www.setaswall.com/gradient-wallpapers/gradient-phone-wallpaper-043/)
+ - [GitHub](https://github.com/brave/brave-browser/issues/8061)
+ https://cdn.wallpapersafari.com/75/35/3RrO1B.png
