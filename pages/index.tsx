@@ -10,7 +10,7 @@ import type { NextPage } from 'next';
 const App: NextPage = () => {
 
   return (
-    <Container sx={{ backgroundImage: `url(${BgImage.src})`, backgroundSize: "100% 100%", }}>
+    <Container sx={{ backgroundImage: `url(${BgImage.src})`, backgroundSize: "100% 100%", maxWidth:"100%" }}>
 
       <Landing />
       <hr></hr>

@@ -31,12 +31,12 @@ export const Portfolio = () => {
                                 boxShadow: 2
                             }}
                         >
-                            <CardMedia
+                            {/* <CardMedia
                                 component="img"
                                 alt="libre.ink screenshot"
                                 height="100%"
                                 image="../assets/libre.ink.png"
-                            />
+                            /> */}
                             <CardContent>
                                 <Typography variant="h6" color="text.primary" align="center">
                                     libre.ink

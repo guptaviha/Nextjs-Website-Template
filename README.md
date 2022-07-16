@@ -11,9 +11,10 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 - [ ] Bug with images
 - [ ] Add screenshots to projects
 - [ ] Add resume
-- [ ] Dynamic subtitle on landing page
+- [ ] Dynamic subtitles on landing page
 - [ ] Copy of email to clipboard
 - [ ] Try out Vercel for analytics
+- [ ] MaxWidth bug. Replace white bars with black?
 
 ### Credits
 Made possible thanks to the following free resources

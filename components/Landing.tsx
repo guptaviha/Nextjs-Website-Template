@@ -30,6 +30,10 @@ export const Landing = () => {
                         <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "all .5s ease-in-out" }}>Toolbox</Typography>
                     </Link>
 
+                    <Link href="" underline="none" color="unset">
+                        <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "all .5s ease-in-out" }}>Resume</Typography>
+                    </Link>
+
                 </Stack>
             </Box>
             {/* </Toolbar> */}
