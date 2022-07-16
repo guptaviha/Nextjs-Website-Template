@@ -5,7 +5,6 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Zoom from '@mui/material/Zoom';
 import Link from '@mui/material/Link';
-// import Resume from '/../src/assets/CV_2022_Apr.pdf';
 
 export const Landing = () => {
 
@@ -31,9 +30,9 @@ export const Landing = () => {
                         <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "all .5s ease-in-out" }}>Toolbox</Typography>
                     </Link>
 
-                    {/* <Link href={Resume} target = "_blank" underline="none" color="unset">
+                    <Link href="https://drive.google.com/file/d/1rSQnWD5ALtBDj2-x0GHApMcHRIgeXgw1/view?usp=sharing" target = "_blank" underline="none" color="unset" rel="noopener">
                         <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "all .5s ease-in-out" }}>Resume</Typography>
-                    </Link> */}
+                    </Link>
 
                 </Stack>
             </Box>
