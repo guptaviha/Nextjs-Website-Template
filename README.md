@@ -1,6 +1,6 @@
-## My Personal Website
+## vihagupta.com
 
-Personal site for Viha.
+Personal website for Viha.
 
 Made with :heart: using Next.js, Material UI and hosted on Netlify.
 
