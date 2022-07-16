@@ -29,14 +29,14 @@ Gupta, a zealous Software Dev based in NYC. As a recent CS grad with prior
 work ex, I'm ready to dive head-first into changing the word one semicolon 
 at a time. Give me a shot and let's rock the corporate world together.`
 
+const t = true
+
 const Home: NextPage = () => {
 
   return (
     <Container sx={{ backgroundImage: `url(${BgImage.src})`, backgroundSize: "100% 100%", }}>
       {/* <Toolbar> */}
-      <Box w="100%" px="260px" pt="30px"
-      // sx={{ position: "fixed"}}
-      >
+      <Box px="260px" pt="30px">
         <Stack direction="row" spacing={8} >
 
           <Link href="#Home" underline="none" color="unset">
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
       <Box p="160px" id="Home">
 
         <Stack direction="row" spacing={10}>
-          <Zoom in="true">
+          <Zoom in={true}>
             <Box p="80px">
               <Typography variant="h3">👋🏽 Hi, I'm Viha!</Typography>
               <br></br>
@@ -72,7 +72,8 @@ const Home: NextPage = () => {
               {/* <Typography variant="subtitle2">Coder by day. Curious by night. Sleepless the day after.</Typography> */}
             </Box>
           </Zoom>
-          <Zoom in="true">
+
+          <Zoom in={true}>
             <Avatar src="../static/avatar.png" sx={{ width: 200, height: 200 }} />
           </Zoom>
         </Stack>
@@ -86,7 +87,7 @@ const Home: NextPage = () => {
         <Typography variant="h6">{INTRO}</Typography>
         <br></br>
         <Box sx={{ px: 20, pt: 5 }}>
-          <Stack direction="row" spacing={6} align="center">
+          <Stack direction="row" spacing={6} >
 
             <Link href="https://github.com/guptaviha/" underline="none" target="_blank" rel="noopener">
               <IconButton color="primary" size="medium">
