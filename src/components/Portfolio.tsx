@@ -35,7 +35,7 @@ export const Portfolio = () => {
                                 component="img"
                                 alt="libre.ink screenshot"
                                 height="100%"
-                                image="../assets/libre.ink.png"
+                                image="../src/assets/libre.ink.png"
                             /> */}
                             <CardContent>
                                 <Typography variant="h6" color="text.primary" align="center">

@@ -5,6 +5,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Zoom from '@mui/material/Zoom';
 import Link from '@mui/material/Link';
+// import Resume from '/../src/assets/CV_2022_Apr.pdf';
 
 export const Landing = () => {
 
@@ -30,9 +31,9 @@ export const Landing = () => {
                         <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "all .5s ease-in-out" }}>Toolbox</Typography>
                     </Link>
 
-                    <Link href="" underline="none" color="unset">
+                    {/* <Link href={Resume} target = "_blank" underline="none" color="unset">
                         <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "all .5s ease-in-out" }}>Resume</Typography>
-                    </Link>
+                    </Link> */}
 
                 </Stack>
             </Box>
@@ -53,7 +54,7 @@ export const Landing = () => {
                     </Zoom>
 
                     <Zoom in={true}>
-                        <Avatar src="../assets/avatar.png" sx={{ width: 200, height: 200 }} />
+                        <Avatar src="../src/assets/avatar.png" sx={{ width: 200, height: 200 }} />
                     </Zoom>
                 </Stack>
             </Box>

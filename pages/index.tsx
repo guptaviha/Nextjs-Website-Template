@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import { Landing } from '../components/Landing';
-import { About } from '../components/About';
-import { Portfolio } from '../components/Portfolio';
-import { Toolbox } from '../components/Toolbox';
-import BgImage from '../assets/background.jpeg';
+import { Landing } from '../src/components/Landing';
+import { About } from '../src/components/About';
+import { Portfolio } from '../src/components/Portfolio';
+import { Toolbox } from '../src/components/Toolbox';
+import BgImage from '../src/assets/background.jpeg';
 import type { NextPage } from 'next';
 
 const App: NextPage = () => {

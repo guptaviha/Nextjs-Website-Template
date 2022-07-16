@@ -15,6 +15,7 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 - [ ] Copy of email to clipboard
 - [ ] Try out Vercel for analytics
 - [ ] MaxWidth bug. Replace white bars with black?
+- [ ] Find better nav bar transitions
 
 ### Credits
 Made possible thanks to the following free resources
