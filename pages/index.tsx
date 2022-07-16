@@ -2,7 +2,6 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 import Paper from '@mui/material/Paper';
-import BgImage from '../static/background.jpeg'; // Import using relative path
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
@@ -17,10 +16,11 @@ import Button from '@mui/material/Button';
 import Slide from '@mui/material/Slide';
 import Link from '@mui/material/Link';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { MdEmail, MdCall } from 'react-icons/md';
-import { FaAws, FaPython } from 'react-icons/fa';
-import { TbBrandJavascript } from 'react-icons/tb';
-import { DiAws, DiLinux, DiJavascript, DiJsBadge, DiMysql, DiNodejs, DiReact, DiSpark, DiGit } from 'react-icons/di';
+import { MdEmail } from 'react-icons/md';
+
+import BgImage from '../assets/background.jpeg';
+// import AvatarImage from '../assets/avatar.jpeg';
+// import LibreImage from '../assets/libre.ink.jpeg';
 
 import type { NextPage } from 'next';
 
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
           </Zoom>
 
           <Zoom in={true}>
-            <Avatar src="../static/avatar.png" sx={{ width: 200, height: 200 }} />
+            <Avatar src="../assets/avatar.png" sx={{ width: 200, height: 200 }} />
           </Zoom>
         </Stack>
       </Box>
@@ -148,7 +148,8 @@ const Home: NextPage = () => {
                 component="img"
                 alt="libre.ink screenshot"
                 height="100%"
-                image="../static/libre.ink.png"
+                image="../assets/libre.ink.png"
+                // image="url(${BgImage.src})"
               />
               <CardContent>
                 <Typography variant="h6" color="text.primary" align="center">

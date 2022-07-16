@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm install && next build",
     "start": "next start",
-    "dev": "next",
+    "dev": "npm install && next",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
