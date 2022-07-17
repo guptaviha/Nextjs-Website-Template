@@ -6,7 +6,7 @@ export const Toolbox = () => {
     return (
         <>
             {/* My Toolbox */}
-            <Box p="200px" id="Toolbox">
+            <Box px="200px" pt="200px" pb="240px" id="Toolbox">
 
                 <Typography variant="h4">My Toolbox</Typography>
                 <br></br>

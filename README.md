@@ -17,6 +17,12 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 - [ ] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
 - [ ] Snap when scrolling - scroll-snap-type 
+- [ ] Add labels under toolbox
+- [ ] Use better fonts like  Mosk
+ <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-600.woff2">
+ <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-600.woff">
+ <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-900.woff2">
+ <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-900.woff">
 
 ### Credits
 Made possible thanks to the following free asset resources
@@ -25,3 +31,4 @@ Made possible thanks to the following free asset resources
  - [SetAsWall](https://www.setaswall.com/gradient-wallpapers/gradient-phone-wallpaper-043/)
  - [GitHub](https://github.com/brave/brave-browser/issues/8061)
  https://cdn.wallpapersafari.com/75/35/3RrO1B.png
+

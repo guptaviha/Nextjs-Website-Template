@@ -52,11 +52,11 @@ const App: NextPage = () => {
           </IconButton> */}
 
           <Landing mode={mode} setMode={setMode} />
-          <hr></hr>
+          {/* <hr></hr> */}
           <About />
-          <hr></hr>
+          {/* <hr></hr> */}
           <Portfolio />
-          <hr></hr>
+          {/* <hr></hr> */}
           <Toolbox />
           <hr></hr>
 

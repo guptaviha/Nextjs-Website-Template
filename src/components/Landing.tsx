@@ -15,7 +15,7 @@ export const Landing = (props: LandingProps) => {
     return (
         <>
 
-            <Box px="260px" pt="30px" id="Landing">
+            <Box px="220px" pt="30px" id="Landing">
                 <Stack direction="row" spacing={8} >
 
                     <Link href="#Landing" underline="none" color="unset">
@@ -45,16 +45,26 @@ export const Landing = (props: LandingProps) => {
                 </Stack>
             </Box>
 
-            <Box p="160px">
+            <Box px="200px" pt="160px" pb="200px">
 
-                <Stack direction="row" spacing={10}>
+                <Stack direction="row" spacing={2}>
                     <Zoom in={true}>
-                        <Box p="80px">
-                            <Typography variant="h3">👋🏽 Hi, I'm Viha!</Typography>
+                        <Box pl="0px" pt="30px" pr="40px">
+                            <Typography variant="h3" pl="40px">👋🏽 Hi, I'm Viha!</Typography>
                             <br></br>
                             {/* <Typography variant="subtitle2">Self-proclaimed stackoverflow copy-n-paste expert</Typography> */}
-                            <Typography variant="subtitle2">Your friendly neighborhood Software Developer</Typography>
+                            <Typography variant="h6">Your friendly neighborhood Software Developer</Typography>
                             {/* <Typography variant="subtitle2">Coder by day. Curious by night. Sleepless the day after.</Typography> */}
+                            {/* <br></br> */}
+
+                            {/* <Typography variant="h6">and stackoverflow copy-n-paste expert 👩🏾‍💻</Typography> */}
+                            <Typography variant="h6">and part-time ukulele enthusiast 🎵</Typography>
+                            {/* <Typography variant="h6">and figure skating novice ⛸</Typography> */}
+                            {/* <Typography variant="h6">and Wikipedia rabbit-hole victim 📗</Typography> */}
+                            {/* <Typography variant="h6">and nature documentary nerd 🌎</Typography> */}
+                            {/* <Typography variant="h6">and ardent TraderJoes explorer 🛒</Typography> */}
+                            {/* <Typography variant="h6">and occaional painting dilettante 🎨</Typography> */}
+
                         </Box>
                     </Zoom>
 
