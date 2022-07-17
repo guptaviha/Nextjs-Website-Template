@@ -1,13 +1,7 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-import IconButton from '@mui/material/IconButton';
-import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+import { Box, Typography, Stack, IconButton, Button, Link, Snackbar } from '@mui/material';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
-import Snackbar from '@mui/material/Snackbar';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import Slide, { SlideProps } from '@mui/material/Slide';
 

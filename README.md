@@ -5,17 +5,18 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 
 
 ### TO DO List
-- [ ] Night mode
+- [x] Night mode
 - [ ] Responsive
 - [x] Animate scroll on toolbar click
-- [ ] Bug with images not showing
-- [ ] Add screenshots to projects
+- [x] Bug with images not showing
+- [x] Add screenshots to projects
 - [x] Add resume
 - [ ] Dynamic subtitles on landing page
 - [x] Copy to clipboard for email
 - [ ] Try out Vercel for analytics
 - [ ] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
+- [ ] Snap when scrolling
 
 ### Credits
 Made possible thanks to the following free asset resources

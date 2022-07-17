@@ -1,11 +1,7 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import Link from '@mui/material/Link';
+import { Box, Typography, Stack, Card, CardMedia, CardContent, Link } from '@mui/material';
+import LibreImage from '../../src/assets/libre.png';
+import ElonButAIImage from '../../src/assets/elonButAI2.png';
 
 export const Portfolio = () => {
 
@@ -31,12 +27,12 @@ export const Portfolio = () => {
                                 boxShadow: 2
                             }}
                         >
-                            {/* <CardMedia
+                            <CardMedia
                                 component="img"
                                 alt="libre.ink screenshot"
                                 height="100%"
-                                image="../src/assets/libre.ink.png"
-                            /> */}
+                                image={LibreImage.src}
+                            />
                             <CardContent>
                                 <Typography variant="h6" color="text.primary" align="center">
                                     libre.ink
@@ -60,6 +56,12 @@ export const Portfolio = () => {
                                 boxShadow: 2
                             }}
                         >
+                            <CardMedia
+                                component="img"
+                                alt="libre.ink screenshot"
+                                height="100%"
+                                image={ElonButAIImage.src}
+                            />
                             <CardContent>
                                 <Typography variant="h6" color="text.primary" align="center">
                                     elonButAI

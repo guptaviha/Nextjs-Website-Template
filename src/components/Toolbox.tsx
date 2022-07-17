@@ -1,8 +1,5 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
+import { Box, Typography, Avatar, Stack } from '@mui/material';
 
 export const Toolbox = () => {
 
