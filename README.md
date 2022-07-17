@@ -16,7 +16,7 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 - [ ] Try out Vercel for analytics
 - [ ] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
-- [ ] Snap when scrolling
+- [ ] Snap when scrolling - scroll-snap-type 
 
 ### Credits
 Made possible thanks to the following free asset resources
