@@ -5,24 +5,21 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mu
 
 
 ### TO DO List
-- [x] Night mode
 - [ ] Responsive
-- [x] Animate scroll on toolbar click
-- [x] Bug with images not showing
-- [x] Add screenshots to projects
-- [x] Add resume
+- [ ] Try a CSS gradient background
 - [ ] Dynamic subtitles on landing page
-- [x] Copy to clipboard for email
 - [ ] Try out Vercel for analytics
 - [ ] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
 - [ ] Snap when scrolling - scroll-snap-type 
 - [ ] Add labels under toolbox
 - [ ] Use better fonts like  Mosk
- <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-600.woff2">
- <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-600.woff">
- <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-900.woff2">
- <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-900.woff">
+- [x] Night mode
+- [x] Animate scroll on toolbar click
+- [x] Bug with images not showing
+- [x] Add screenshots to projects
+- [x] Add resume
+- [x] Copy to clipboard for email
 
 ### Credits
 Made possible thanks to the following free asset resources
@@ -32,3 +29,8 @@ Made possible thanks to the following free asset resources
  - [GitHub](https://github.com/brave/brave-browser/issues/8061)
  https://cdn.wallpapersafari.com/75/35/3RrO1B.png
 
+
+ <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-600.woff2">
+ <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-600.woff">
+ <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-900.woff2">
+ <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-900.woff">
