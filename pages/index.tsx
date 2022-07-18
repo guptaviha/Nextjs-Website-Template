@@ -18,7 +18,7 @@ const Index: NextPage = () => {
           <meta name="keywords" content="viha gupta"></meta>
           <meta http-equiv='X-UA-Compatible' content='IE=edge'></meta>
           <meta property="og:title" content="Viha Gupta" />
-          <meta property="og:description" content="Viha's website" />
+          <meta property="og:description" content="Welcome to my corner of the web!" />
           <meta property="og:image" content="https://i.ibb.co/s9vx1g5/og-image.png" />
           <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0' />
           <script type='module' src='index.tsx'></script>

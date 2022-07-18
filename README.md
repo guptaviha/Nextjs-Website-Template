@@ -6,13 +6,12 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Chakra UI](https://chak
 
 ### TO DO List
 - [ ] 100vh and parent display flex and align items center
-- [ ] Set maxWidth for About me etc (when screen is wide)
-- [ ] Night mode btn transition
+- [x] Set maxWidth for About me etc (when screen is wide)
+- [ ] Night mode btn transition - optional
 - [x] dynamic subs transitions
-- [ ] Try a CSS gradient background
 - [ ] Try out Vercel for analytics
 - [ ] Find better nav bar transitions
-- [ ] Snap when scrolling? - scroll-snap-type 
+- [ ] Snap when scrolling? - buggy 
 - [ ] Dark and light mode screenshots
 - [ ] Export all data to a file
 - [ ] Submit to nextjs as a template
