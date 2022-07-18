@@ -15,15 +15,19 @@ export const Portfolio = () => {
             <Center>
                 <Box
                     px={{ base: '50px', md: '100px', lg: '200px' }}
-                    pt="200px"
-                    pb="200px"
+                    pt={{ base: '100px', md: '150px', lg: '200px' }}
+                    pb={{ base: '100px', md: '150px', lg: '200px' }}
                     id="Portfolio">
 
-                    <Text fontSize="2xl">
+                    <Text 
+                        fontSize="2xl"
+                        fontFamily="mosk-800">
                         My Portfolio
                     </Text>
                     <br></br>
-                    <Text fontSize="lg">
+                    <Text 
+                        fontSize="xl"
+                        fontFamily="mosk-400">
                         Check out some of my work.
                     </Text>
                     <br></br>
@@ -50,8 +54,9 @@ export const Portfolio = () => {
                                 <Box p='6'>
                                     <Box
                                         mt='1'
-                                        fontWeight='semibold'
-                                        as='h4'
+                                        // fontWeight='semibold'
+                                        fontFamily="mosk-700"
+                                        as='h3'
                                         lineHeight='tight'
                                         noOfLines={1}>
                                         libre.ink
@@ -84,8 +89,9 @@ export const Portfolio = () => {
                                 <Box p='6'>
                                     <Box
                                         mt='1'
-                                        fontWeight='semibold'
-                                        as='h4'
+                                        // fontWeight='semibold'
+                                        fontFamily="mosk-700"
+                                        as='h3'
                                         lineHeight='tight'
                                         noOfLines={1}>
                                         elonButAI

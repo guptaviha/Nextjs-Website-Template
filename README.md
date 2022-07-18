@@ -5,17 +5,17 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Chakra UI](https://chak
 
 
 ### TO DO List
-- [ ] Add zoom for landing
+- [x] Add zoom for landing
 - [x] Night Mode needs to be better for text
 - [x] Responsive
 - [ ] Try a CSS gradient background
 - [x] Dynamic subtitles on landing page
 - [ ] Try out Vercel for analytics
-- [ ] MaxWidth bug. Replace white bars with black?
+- [x] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
 - [ ] Snap when scrolling? - scroll-snap-type 
 - [ ] Add labels under toolbox
-- [ ] Use better fonts like Mosk
+- [x] Use better fonts like Mosk
 - [x] Night mode
 - [x] Animate scroll on toolbar click
 - [x] Bug with images not showing
@@ -30,9 +30,4 @@ Made possible thanks to the following free asset resources
  - [SetAsWall](https://www.setaswall.com/gradient-wallpapers/gradient-phone-wallpaper-043/)
  - [GitHub](https://github.com/brave/brave-browser/issues/8061)
  https://cdn.wallpapersafari.com/75/35/3RrO1B.png
-
-
- <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-600.woff2">
- <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-600.woff">
- <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-900.woff2">
- <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-900.woff">
+ - [Fonts](https://www.cufonfonts.com/font/mosk)

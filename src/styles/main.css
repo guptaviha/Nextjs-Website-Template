@@ -6,4 +6,50 @@ html, body {
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; */
+  /* transition: background 0.1s ease-in !important; */
 }  
+
+@font-face {
+  font-family: 'mosk-900';
+  src: local('Lato'), url('../fonts/mosk-900.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-800';
+  src: local('Lato'), url('../fonts/mosk-800.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-700';
+  src: local('Lato'), url('../fonts/mosk-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-600';
+  src: local('Lato'), url('../fonts/mosk-600.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-500';
+  src: local('Lato'), url('../fonts/mosk-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-400';
+  src: local('Lato'), url('../fonts/mosk-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-300';
+  src: local('Lato'), url('../fonts/mosk-300.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-200';
+  src: local('Lato'), url('../fonts/mosk-200.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mosk-100';
+  src: local('Lato'), url('../fonts/mosk-100.ttf') format('truetype');
+}

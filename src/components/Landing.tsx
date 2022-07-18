@@ -1,7 +1,7 @@
 import * as React from 'react';
 import AvatarImage from '../../src/assets/avatar.png';
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
-import { Box, Stack, Link, Text, IconButton, Avatar } from '@chakra-ui/react'
+import { Box, Stack, Link, Text, IconButton, Avatar, Image } from '@chakra-ui/react'
 import { useDisclosure, useColorMode, Center, SlideFade } from '@chakra-ui/react'
 
 
@@ -33,7 +33,7 @@ export const Landing = () => {
         setInterval(() => {
             subsIndex == 6 ? subsIndex = 0 : subsIndex += 1;
             setCurrSub(subs[subsIndex])
-        }, 2000);
+        }, 2500);
     }, []);
 
     return (
@@ -42,7 +42,8 @@ export const Landing = () => {
             <Center >
                 <Box
                     // px={{ base: '50px', md: '100px', lg: '200px' }}
-                    pt="50px"
+                    pt={{ base: '30px', md: '50px', lg: '50px' }}
+                    // pt="50px"
                     id="Landing">
                     <Stack
                         direction="row"
@@ -53,6 +54,7 @@ export const Landing = () => {
                             style={{ textDecoration: "none" }}>
                             <Text
                                 fontSize='xlg'
+                                fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }} >
                                 Home
@@ -64,6 +66,7 @@ export const Landing = () => {
                             style={{ textDecoration: "none" }}>
                             <Text
                                 fontSize='xlg'
+                                fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
                                 About
@@ -75,6 +78,7 @@ export const Landing = () => {
                             style={{ textDecoration: "none" }}>
                             <Text
                                 fontSize='xlg'
+                                fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
                                 Portfolio
@@ -86,6 +90,7 @@ export const Landing = () => {
                             style={{ textDecoration: "none" }}>
                             <Text
                                 fontSize='xlg'
+                                fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
                                 Toolbox
@@ -99,6 +104,7 @@ export const Landing = () => {
                             rel="noopener">
                             <Text
                                 fontSize='xlg'
+                                fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
                                 Resume
@@ -107,6 +113,7 @@ export const Landing = () => {
 
                         <IconButton
                             _focus={{ outline: "none" }}
+                            // _hover={{ background: "rgba(255, 255, 255, 0.3)"}}
                             onClick={() => toggleColorMode()}
                             aria-label='dark mode toggle'
                             variant='ghost'
@@ -124,8 +131,8 @@ export const Landing = () => {
             <Center>
                 <Box
                     px={{ base: '50px', md: '100px', lg: '200px' }}
-                    pt="160px"
-                    pb="200px" >
+                    pt={{ base: '100px', md: '150px', lg: '200px' }}
+                    pb={{ base: '100px', md: '150px', lg: '200px' }} >
                     <Stack
                         direction={{ base: 'column', lg: 'row' }}
                         spacing={2}>
@@ -142,19 +149,26 @@ export const Landing = () => {
 
                         {/* Text Part */}
                         <Box
-                            pt="30px" >
-
-                            <Text fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }} pl="40px">
+                            pt="20px" >
+                            <Center>
+                            <Text 
+                                fontSize={{ base: '4xl', md: '5xl' }} 
+                                fontFamily="mosk-800">
                                 👋🏽 Hi, I'm Viha!
                             </Text>
+                            </Center>
                             <br></br>
-                            <Text fontSize='xl'>
-                                Your friendly neighborhood Software Developer
+                            <Text 
+                                fontSize='xl'
+                                fontFamily="mosk-600">
+                                Your friendly neighborhood Software Dev
                             </Text>
 
                             <SlideFade in={true} offsetY='20px'>
-                                <Text fontSize='xl' id="subs-text">
-                                    {/* {subs[0]} */}
+                                <Text 
+                                    fontSize='xl' 
+                                    id="subs-text"
+                                    fontFamily="mosk-600">
                                     {currSub}
                                 </Text>
                             </SlideFade>
