@@ -5,16 +5,18 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Chakra UI](https://chak
 
 
 ### TO DO List
-- [x] Add zoom for landing
-- [x] Night Mode needs to be better for text
-- [x] Responsive
+- [ ] 100vh and parent display flex and align items center
+- [ ] Set maxWidth for About me etc (when screen is wide)
+- [ ] Night mode btn transition
+- [ ] dynamic subs transitions
 - [ ] Try a CSS gradient background
-- [x] Dynamic subtitles on landing page
 - [ ] Try out Vercel for analytics
-- [x] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
 - [ ] Snap when scrolling? - scroll-snap-type 
 - [ ] Add labels under toolbox
+- [x] Dynamic subtitles on landing page
+- [x] Responsive
+- [x] Full page MaxWidth bug
 - [x] Use better fonts like Mosk
 - [x] Night mode
 - [x] Animate scroll on toolbar click

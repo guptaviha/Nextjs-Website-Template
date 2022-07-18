@@ -4,7 +4,7 @@ import { About } from './About';
 import { Portfolio } from './Portfolio';
 import { Toolbox } from './Toolbox';
 import BgImageLight from '../assets/background-light.jpeg';
-import BgImageDark from '../assets/background-dark3.jpeg';
+import BgImageDark from '../assets/background-dark75.jpeg';
 import { Container, useColorMode } from '@chakra-ui/react'
 
 export const App = () => {
