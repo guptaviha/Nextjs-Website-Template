@@ -17,7 +17,8 @@ export const Portfolio = () => {
                     px={{ base: '50px', md: '100px', lg: '200px' }}
                     pt={{ base: '100px', md: '150px', lg: '200px' }}
                     pb={{ base: '100px', md: '150px', lg: '200px' }}
-                    id="Portfolio">
+                    id="Portfolio"
+                    scrollSnapAlign="start">
 
                     <Text 
                         fontSize="2xl"

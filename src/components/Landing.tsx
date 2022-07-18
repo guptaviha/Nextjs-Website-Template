@@ -44,7 +44,8 @@ export const Landing = () => {
                     // px={{ base: '50px', md: '100px', lg: '200px' }}
                     pt={{ base: '30px', md: '50px', lg: '50px' }}
                     // pt="50px"
-                    id="Landing">
+                    id="Landing"
+                    scrollSnapAlign="start">
                     <Stack
                         direction="row"
                         spacing={{ base: '2', sm: '6', md: '10', lg: '14' }} >

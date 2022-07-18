@@ -15,22 +15,25 @@ export const App = () => {
 
     return (
         <>
-        <Container 
-            backgroundImage={currentBg}
-            // style={{background: "linear-gradient(to bottom right, rgba(238,174,202,1), rgba(148,187,233,1));" }} 
-            backgroundSize= "100% 100%" 
-            maxWidth= "100%" 
-            // transition= "all 1s ease-in"
+            <Container
+                backgroundImage={currentBg}
+                // style={{background: "linear-gradient(to bottom right, rgba(238,174,202,1), rgba(148,187,233,1));" }} 
+                backgroundSize="100% 100%"
+                maxWidth="100%"
+                // transition= "all 1s ease-in"
+                scrollSnapType="y proximity"
+                scrollPaddingTop= "15vh"
+                overflowY= "scroll"
             >
-        
-            <Landing />
-            {/* <hr></hr> */}
-            <About />
-            {/* <hr></hr> */}
-            <Portfolio />
-            {/* <hr></hr> */}
-            <Toolbox />
-            <hr></hr>
+
+                <Landing />
+                {/* <hr></hr> */}
+                <About />
+                {/* <hr></hr> */}
+                <Portfolio />
+                {/* <hr></hr> */}
+                <Toolbox />
+                <hr></hr>
             </Container>
         </>
     );

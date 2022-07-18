@@ -11,7 +11,8 @@ export const Toolbox = () => {
                     px={{ base: '50px', md: '100px', lg: '200px' }}
                     pt={{ base: '100px', md: '150px', lg: '200px' }}
                     pb={{ base: '180px', md: '220px', lg: '280px' }}
-                    id="Toolbox">
+                    id="Toolbox"
+                    scrollSnapAlign="start">
 
                     <Text 
                         fontSize="2xl"

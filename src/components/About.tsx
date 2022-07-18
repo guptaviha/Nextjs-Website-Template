@@ -26,7 +26,8 @@ export const About = () => {
                     // pb="200px"
                     pt={{ base: '100px', md: '150px', lg: '200px' }}
                     pb={{ base: '100px', md: '150px', lg: '200px' }}
-                    id="About">
+                    id="About"
+                    scrollSnapAlign="start">
 
                     <Text 
                         fontSize="2xl"
