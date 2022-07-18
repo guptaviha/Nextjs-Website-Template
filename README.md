@@ -6,16 +6,16 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Chakra UI](https://chak
 
 ### TO DO List
 - [ ] Add zoom for landing
-- [ ] Night Mode
-- [ ] Responsive
+- [x] Night Mode needs to be better for text
+- [x] Responsive
 - [ ] Try a CSS gradient background
-- [ ] Dynamic subtitles on landing page
+- [x] Dynamic subtitles on landing page
 - [ ] Try out Vercel for analytics
 - [ ] MaxWidth bug. Replace white bars with black?
 - [ ] Find better nav bar transitions
-- [ ] Snap when scrolling - scroll-snap-type 
+- [ ] Snap when scrolling? - scroll-snap-type 
 - [ ] Add labels under toolbox
-- [ ] Use better fonts like  Mosk
+- [ ] Use better fonts like Mosk
 - [x] Night mode
 - [x] Animate scroll on toolbar click
 - [x] Bug with images not showing

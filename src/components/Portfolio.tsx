@@ -2,9 +2,12 @@ import * as React from 'react';
 import LibreImage from '../../src/assets/libre.png';
 import ElonButAIImage from '../../src/assets/elonButAI2.png';
 
-import { Box, Text, Stack, Link, Image, Center } from '@chakra-ui/react'
+import { Box, Text, Stack, Link, Image, Center, useColorMode } from '@chakra-ui/react'
 
 export const Portfolio = () => {
+
+    const { colorMode, toggleColorMode } = useColorMode();
+    let cardBg = colorMode === 'dark' ? `gray.700` : `gray.50`
 
     return (
         <>
@@ -39,10 +42,11 @@ export const Portfolio = () => {
                                 borderWidth='1px'
                                 borderRadius='lg'
                                 overflow='hidden'
-                                backgroundColor="black"
+                                bg={cardBg}
                                 _hover={{ boxShadow: "2xl" }}>
                                 <Image
                                     src={LibreImage.src} />
+                                <hr></hr>
                                 <Box p='6'>
                                     <Box
                                         mt='1'
@@ -54,7 +58,7 @@ export const Portfolio = () => {
                                     </Box>
                                     <Box
                                         as='span'
-                                        color='gray.600'
+                                        // color='gray.600'
                                         fontSize='sm'>
                                         A uniquely instant anonymous blogging website. Everything you type lives in the URL.
                                     </Box>
@@ -72,10 +76,11 @@ export const Portfolio = () => {
                                 borderWidth='1px'
                                 borderRadius='lg'
                                 overflow='hidden'
-                                backgroundColor="black"
+                                bg={cardBg}
                                 _hover={{ boxShadow: "2xl" }}>
                                 <Image
                                     src={ElonButAIImage.src} />
+                                    <hr></hr>
                                 <Box p='6'>
                                     <Box
                                         mt='1'
@@ -87,7 +92,7 @@ export const Portfolio = () => {
                                     </Box>
                                     <Box
                                         as='span'
-                                        color='gray.600'
+                                        // color='gray.600'
                                         fontSize='sm'>
                                         A Twitter Bot account that posts AI-generated fake tweets as Elon Musk. Fine tuned on GPT2.
                                     </Box>

@@ -2,7 +2,7 @@ import * as React from 'react';
 import AvatarImage from '../../src/assets/avatar.png';
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 import { Box, Stack, Link, Text, IconButton, Avatar } from '@chakra-ui/react'
-import { useDisclosure, useColorMode, Center } from '@chakra-ui/react'
+import { useDisclosure, useColorMode, Center, SlideFade } from '@chakra-ui/react'
 
 
 export const Landing = () => {
@@ -10,13 +10,39 @@ export const Landing = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onToggle } = useDisclosure()
 
+
+    const subs = [
+        'and stackoverflow copy-n-paste expert 👩🏾‍💻',
+        'and part-time ukulele enthusiast 🎵',
+        'and figure skating novice ⛸',
+        'and Wikipedia rabbit-hole victim 📗',
+        'and nature documentary nerd 🌎',
+        'and ardent TraderJoes explorer 🛒',
+        'and occaional painting dilettante 🎨'
+    ]
+
+    let subsIndex = 0
+    const [currSub, setCurrSub] = React.useState(subs[subsIndex]);
+
+    // const element=document.getElementById("subs-text");
+    // setInterval(function() {element.innerHTML += "Hello"}, 1000);
+
+    // document.getElementById("subs-text").innerHTML += "Hello"
+
+    React.useEffect(() => {
+        setInterval(() => {
+            subsIndex == 6 ? subsIndex = 0 : subsIndex += 1;
+            setCurrSub(subs[subsIndex])
+        }, 2000);
+    }, []);
+
     return (
         <>
             {/* Menu */}
-            <Center>
+            <Center >
                 <Box
                     px={{ base: '50px', md: '100px', lg: '200px' }}
-                    pt="30px"
+                    pt="50px"
                     id="Landing">
                     <Stack
                         direction="row"
@@ -104,31 +130,6 @@ export const Landing = () => {
                         direction={{ base: 'column', lg: 'row' }}
                         spacing={2}>
 
-                        {/* Text Part */}
-                        <Box
-                            pt="30px"
-                            pr={{ base: '20px', md: '30px', lg: '40px' }}>
-
-                            <Text fontSize='5xl' pl="40px">
-                                👋🏽 Hi, I'm Viha!
-                            </Text>
-                            <br></br>
-                            <Text fontSize='xl'>
-                                Your friendly neighborhood Software Developer
-                            </Text>
-
-                            <Text fontSize='xl'>
-                                and stackoverflow copy-n-paste expert 👩🏾‍💻
-                            </Text>
-                            {/* <Text fontSize='xl'>and part-time ukulele enthusiast 🎵</Text> */}
-                            {/* <Text fontSize='sm'>and figure skating novice ⛸</Text> */}
-                            {/* <Text fontSize='sm'>and Wikipedia rabbit-hole victim 📗</Text> */}
-                            {/* <Text fontSize='sm'>and nature documentary nerd 🌎</Text> */}
-                            {/* <Text fontSize='sm'>and ardent TraderJoes explorer 🛒</Text> */}
-                            {/* <Text fontSize='sm'>and occaional painting dilettante 🎨</Text> */}
-
-                        </Box>
-
                         {/* Avatar Part */}
                         <Center>
                             <Avatar
@@ -138,6 +139,27 @@ export const Landing = () => {
                                 height={{ base: '150px', md: '150px', lg: '200px' }}
                                 bg="none" />
                         </Center>
+
+                        {/* Text Part */}
+                        <Box
+                            pt="30px" >
+
+                            <Text fontSize='5xl' pl="40px">
+                                👋🏽 Hi, I'm Viha!
+                            </Text>
+                            <br></br>
+                            <Text fontSize='xl'>
+                                Your friendly neighborhood Software Developer
+                            </Text>
+
+                            <SlideFade in={true} offsetY='20px'>
+                                <Text fontSize='xl' id="subs-text">
+                                    {/* {subs[0]} */}
+                                    {currSub}
+                                </Text>
+                            </SlideFade>
+
+                        </Box>
 
                     </Stack>
                 </Box>

@@ -8,7 +8,6 @@ export const Toolbox = () => {
             {/* My Toolbox */}
             <Center>
                 <Box
-                    // px="200px" 
                     px={{ base: '50px', md: '100px', lg: '200px' }}
                     pt="200px"
                     pb="240px"
@@ -28,11 +27,11 @@ export const Toolbox = () => {
                         <Center>
                         <Stack
                             direction={{ base: 'column', md: 'row' }}
-                            spacing={4} >
+                            spacing={{ base: '40px', md: '20px', lg: '30px' }} >
                             <Box>
                                 <Stack
                                     direction="row"
-                                    spacing={4} >
+                                    spacing={{ base: '40px', md: '20px', lg: '30px' }} >
                                     {/* Python */}
                                     <Image
                                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -58,7 +57,7 @@ export const Toolbox = () => {
                             <Box>
                                 <Stack
                                     direction="row"
-                                    spacing={4} >
+                                    spacing={{ base: '40px', md: '20px', lg: '30px' }} >
                                     {/* NodeJS */}
                                     <Image
                                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
@@ -89,11 +88,11 @@ export const Toolbox = () => {
                         <Center>
                         <Stack
                             direction={{ base: 'column', md: 'row' }}
-                            spacing={4} >
+                            spacing={{ base: '40px', md: '20px', lg: '30px' }} >
                             <Box>
                                 <Stack
                                     direction="row"
-                                    spacing={4} >
+                                    spacing={{ base: '40px', md: '20px', lg: '30px' }} >
                                     {/* Linux */}
                                     <Image
                                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
@@ -121,7 +120,7 @@ export const Toolbox = () => {
                             <Box>
                                 <Stack
                                     direction="row"
-                                    spacing={4} >
+                                    spacing={{ base: '40px', md: '20px', lg: '30px' }} >
                                     {/* Bash */}
                                     <Image
                                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
