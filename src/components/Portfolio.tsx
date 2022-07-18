@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Box, Typography, Stack, Card, CardMedia, CardContent, Link } from '@mui/material';
 import LibreImage from '../../src/assets/libre.png';
 import ElonButAIImage from '../../src/assets/elonButAI2.png';
+
+import { Box, Text, Stack, Link, Image } from '@chakra-ui/react'
 
 export const Portfolio = () => {
 
@@ -10,69 +11,53 @@ export const Portfolio = () => {
             {/* Portfolio */}
             <Box p="200px" id="Portfolio">
 
-                <Typography variant="h4"> My Portfolio</Typography>
+                <Text fontSize="2xl"> My Portfolio</Text>
                 <br></br>
-                <Typography variant="h6">Check out some of my work.</Typography>
+                <Text fontSize="lg">Check out some of my work.</Text>
                 <br></br>
 
                 <Stack direction="row" spacing={4} >
 
-                    <Link href="https://libre.ink" underline="none" target="_blank" rel="noopener">
-                        <Card variant="outlined"
-                            sx={{
-                                ':hover': {
-                                    boxShadow: 20
-                                },
-                                width: 320,
-                                boxShadow: 2
-                            }}
-                        >
-                            <CardMedia
-                                component="img"
-                                alt="libre.ink screenshot"
-                                height="100%"
-                                image={LibreImage.src}
-                            />
-                            <CardContent>
-                                <Typography variant="h6" color="text.primary" align="center">
+                    <Link href="https://libre.ink" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                        <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' backgroundColor="black" _hover={{ boxShadow: "2xl" }}>
+                            <Image src={LibreImage.src} />
+                            <Box p='6'>
+                                <Box
+                                    mt='1'
+                                    fontWeight='semibold'
+                                    as='h4'
+                                    lineHeight='tight'
+                                    noOfLines={1}
+                                >
                                     libre.ink
-                                </Typography>
-                                <hr></hr>
-                                <Typography variant="subtitle1" color="text.secondary" gutterBottom>
+                                </Box>
+                                <Box as='span' color='gray.600' fontSize='sm'>
                                     A uniquely instant anonymous blogging website. Everything you type lives in the URL.
-                                </Typography>
-
-                            </CardContent>
-                        </Card>
+                                </Box>
+                            </Box>
+                        </Box>
                     </Link>
 
-                    <Link href="https://twitter.com/ElonButAI" underline="none" target="_blank" rel="noopener">
-                        <Card variant="outlined"
-                            sx={{
-                                ':hover': {
-                                    boxShadow: 20
-                                },
-                                width: 320,
-                                boxShadow: 2
-                            }}
-                        >
-                            <CardMedia
-                                component="img"
-                                alt="libre.ink screenshot"
-                                height="100%"
-                                image={ElonButAIImage.src}
-                            />
-                            <CardContent>
-                                <Typography variant="h6" color="text.primary" align="center">
+                    <Link href="https://twitter.com/ElonButAI" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                        <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' backgroundColor="black" _hover={{ boxShadow: "2xl" }}>
+                            <Image src={ElonButAIImage.src} />
+                            <Box p='6'>
+                                <Box
+                                    mt='1'
+                                    fontWeight='semibold'
+                                    as='h4'
+                                    lineHeight='tight'
+                                    noOfLines={1}
+                                >
                                     elonButAI
-                                </Typography>
-                                <hr></hr>
-                                <Typography variant="subtitle1" color="text.secondary" gutterBottom>
+                                </Box>
+                                <Box as='span' color='gray.600' fontSize='sm'>
                                     A Twitter Bot account that posts AI-generated fake tweets as Elon Musk. Fine tuned on GPT2.
-                                </Typography>
-                            </CardContent>
-                        </Card>
+                                </Box>
+                            </Box>
+                        </Box>
                     </Link>
+
                 </Stack>
 
             </Box>

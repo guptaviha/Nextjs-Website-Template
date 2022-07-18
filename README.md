@@ -1,10 +1,12 @@
 # vihagupta.com
 Welcome to my personal website.
 
-Made with :heart: using [Next.js](https://nextjs.org/), [Material UI](https://mui.com/) and hosted on [Netlify](https://www.netlify.com/).
+Made with :heart: using [Next.js](https://nextjs.org/), [Chakra UI](https://chakra-ui.com/) and hosted on [Netlify](https://www.netlify.com/).
 
 
 ### TO DO List
+- [ ] Add zoom for landing
+- [ ] Night Mode
 - [ ] Responsive
 - [ ] Try a CSS gradient background
 - [ ] Dynamic subtitles on landing page

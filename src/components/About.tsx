@@ -1,74 +1,75 @@
 import * as React from 'react';
-import { Box, Typography, Stack, IconButton, Button, Link, Snackbar } from '@mui/material';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
-import MuiAlert, { AlertProps } from '@mui/material/Alert';
-import Slide, { SlideProps } from '@mui/material/Slide';
+
+import { Box, Text, Stack, IconButton, Link, useToast } from '@chakra-ui/react'
 
 const INTRO = `Say hello to the next newest additon to your team. I'm Viha 
 Gupta, a zealous Software Dev based in NYC. As a recent CS grad with prior 
 work ex, I'm ready to dive head-first into changing the word one semicolon 
 at a time. Give me a shot and let's rock the corporate world together.`
 
-const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
-    props,
-    ref,
-) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
-
-function SlideTransition(props: SlideProps) {
-    return <Slide {...props} direction="up" />;
-}
+const TOAST_MSG = `vg2237@nyu.edu \n
+Copied to clipboard.`
 
 export const About = () => {
 
-    const [open, setOpen] = React.useState(false);
+    const toast = useToast()
 
     return (
         <>
             {/* About Me */}
             <Box p="200px" id="About">
-                <Typography variant="h4">About Me</Typography>
+                <Text fontSize="2xl">About Me</Text>
                 <br></br>
-                <Typography variant="h6">{INTRO}</Typography>
+                <Text fontSize="xl">{INTRO}</Text>
                 <br></br>
-                <Box sx={{ px: 20, pt: 5 }}>
-                    <Stack direction="row" spacing={6} >
+                <Box px="20" pt="5" >
+                    <Stack direction="row" spacing="50px" >
 
-                        <Link href="https://github.com/guptaviha/" underline="none" target="_blank" rel="noopener">
-                            <IconButton color="primary" size="medium">
-                                <AiFillGithub />
-                            </IconButton>
+                        <Link href="https://github.com/guptaviha/" target="_blank" rel="noopener">
+                            <IconButton
+                                _focus={{ outline: "none" }}
+                                variant='ghost'
+                                isRound={true}
+                                size='lg'
+                                fontSize='30px'
+                                aria-label='Github Btn'
+                                icon={<AiFillGithub />}
+                            />
                         </Link>
 
-                        <Link href="https://www.linkedin.com/in/vihagupta/" underline="none" target="_blank" rel="noopener">
-                            <IconButton color="primary" size="medium">
-                                <AiFillLinkedin />
-                            </IconButton>
+                        <Link href="https://www.linkedin.com/in/vihagupta/" target="_blank" rel="noopener">
+                            <IconButton
+                                _focus={{ outline: "none" }}
+                                variant='ghost'
+                                isRound={true}
+                                size='lg'
+                                fontSize='30px'
+                                aria-label='Linkedin Btn'
+                                icon={<AiFillLinkedin />}
+                            />
                         </Link>
 
-                        <Button variant="text" startIcon={<MdEmail />}
+                        <IconButton
+                            _focus={{ outline: "none" }}
                             onClick={() => {
-                                setOpen(true);
                                 navigator.clipboard.writeText("vg2237@nyu.edu");
+                                toast({
+                                    title: TOAST_MSG,
+                                    status: 'success',
+                                    duration: 5500,
+                                    position: 'top',
+                                    isClosable: true,
+                                })
                             }}
-                        >
-                            vg2237@nyu.edu
-                        </Button>
-                        <Snackbar open={open}
-                            autoHideDuration={2300} 
-                            onClose={() => {
-                                setOpen(false);
-                            }}
-                            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-                            key={"bottom" + "center"}
-                            TransitionComponent={Slide}
-                        >
-                            <Alert severity="success" sx={{ width: '100%' }} >
-                                Copied to clipboard.
-                            </Alert>
-                        </Snackbar>
+                            variant='ghost'
+                            isRound={true}
+                            size='lg'
+                            fontSize='30px'
+                            aria-label='Email Btn'
+                            icon={<MdEmail />}
+                        />
 
                     </Stack>
 

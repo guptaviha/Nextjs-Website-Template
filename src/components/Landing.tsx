@@ -1,16 +1,15 @@
 import * as React from 'react';
-import { Box, IconButton, Typography, Avatar, Stack, Zoom, Link } from '@mui/material';
 import { BiSun, BiMoon } from 'react-icons/bi';
 import AvatarImage from '../../src/assets/avatar.png';
+import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
+import { Box, Stack, Link, Text, IconButton, Avatar } from '@chakra-ui/react'
+import { Fade, ScaleFade, Slide, SlideFade, useDisclosure, useColorMode } from '@chakra-ui/react'
 
-type LandingProps = {
-    mode: string;
-    setMode;
-};
 
-export const Landing = (props: LandingProps) => {
+export const Landing = () => {
 
-    const { mode, setMode } = props;
+    const { colorMode, toggleColorMode } = useColorMode();
+    const { isOpen, onToggle } = useDisclosure()
 
     return (
         <>
@@ -18,29 +17,36 @@ export const Landing = (props: LandingProps) => {
             <Box px="220px" pt="30px" id="Landing">
                 <Stack direction="row" spacing={8} >
 
-                    <Link href="#Landing" underline="none" color="unset">
-                        <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "transform .5s ease-in-out" }} >Home</Typography>
+                    <Link href="#Landing" style={{ textDecoration: "none" }}>
+                        <Text fontSize='xlg' _hover={{ transform: "scale(1.1)" }} style={{ transition: "transform .5s ease-in-out" }} >Home</Text>
                     </Link>
 
-                    <Link href="#About" underline="none" color="unset">
-                        <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "transform .5s ease-in-out" }}>About</Typography>
+                    <Link href="#About" style={{ textDecoration: "none" }}>
+                        <Text fontSize='xlg' _hover={{ transform: "scale(1.1)" }} style={{ transition: "transform .5s ease-in-out" }}>About</Text>
                     </Link>
 
-                    <Link href="#Portfolio" underline="none" color="unset">
-                        <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "transform .5s ease-in-out" }}>Portfolio</Typography>
+                    <Link href="#Portfolio" style={{ textDecoration: "none" }}>
+                        <Text fontSize='xlg' _hover={{ transform: "scale(1.1)" }} style={{ transition: "transform .5s ease-in-out" }}>Portfolio</Text>
                     </Link>
 
-                    <Link href="#Toolbox" underline="none" color="unset">
-                        <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "transform .5s ease-in-out" }}>Toolbox</Typography>
+                    <Link href="#Toolbox" style={{ textDecoration: "none" }}>
+                        <Text fontSize='xlg' _hover={{ transform: "scale(1.1)" }} style={{ transition: "transform .5s ease-in-out" }}>Toolbox</Text>
                     </Link>
 
-                    <Link href="https://drive.google.com/file/d/1rSQnWD5ALtBDj2-x0GHApMcHRIgeXgw1/view?usp=sharing" target="_blank" underline="none" color="unset" rel="noopener">
-                        <Typography variant="h6" sx={{ ":hover": { transform: "scale(1.1)", }, transition: "transform .5s ease-in-out" }}>Resume</Typography>
+                    <Link href="https://drive.google.com/file/d/1rSQnWD5ALtBDj2-x0GHApMcHRIgeXgw1/view?usp=sharing" target="_blank" style={{ textDecoration: "none" }} rel="noopener">
+                        <Text fontSize='xlg' _hover={{ transform: "scale(1.1)" }} style={{ transition: "transform .5s ease-in-out" }}>Resume</Text>
                     </Link>
 
-                    <IconButton sx={{ ml: 1, top: -6 }} onClick={() => setMode((mode === 'light' ? 'dark' : 'light'))} color="inherit">
-                        {mode === 'dark' ? <BiSun /> : <BiMoon />}
-                    </IconButton>
+                    <IconButton
+                            _focus={{ outline: "none" }}
+                            onClick={() => toggleColorMode()}
+                            aria-label='dark mode toggle'
+                            variant='ghost'
+                            isRound={true}
+                            fontSize='30px'
+                            top="-2"
+                            icon={colorMode === 'dark' ? <MdOutlineLightMode /> : <MdOutlineNightlight />}
+                        />
 
                 </Stack>
             </Box>
@@ -48,31 +54,32 @@ export const Landing = (props: LandingProps) => {
             <Box px="200px" pt="160px" pb="200px">
 
                 <Stack direction="row" spacing={2}>
-                    <Zoom in={true}>
+                    <ScaleFade initialScale={.9} in={true}>
                         <Box pl="0px" pt="30px" pr="40px">
-                            <Typography variant="h3" pl="40px">👋🏽 Hi, I'm Viha!</Typography>
+                            <Text fontSize='5xl' pl="40px">👋🏽 Hi, I'm Viha!</Text>
                             <br></br>
-                            {/* <Typography variant="subtitle2">Self-proclaimed stackoverflow copy-n-paste expert</Typography> */}
-                            <Typography variant="h6">Your friendly neighborhood Software Developer</Typography>
-                            {/* <Typography variant="subtitle2">Coder by day. Curious by night. Sleepless the day after.</Typography> */}
+                            {/* <Text variant="subtitle2">Self-proclaimed stackoverflow copy-n-paste expert</Text> */}
+                            <Text fontSize='xl'>Your friendly neighborhood Software Developer</Text>
+                            {/* <Text variant="subtitle2">Coder by day. Curious by night. Sleepless the day after.</Text> */}
                             {/* <br></br> */}
 
-                            {/* <Typography variant="h6">and stackoverflow copy-n-paste expert 👩🏾‍💻</Typography> */}
-                            <Typography variant="h6">and part-time ukulele enthusiast 🎵</Typography>
-                            {/* <Typography variant="h6">and figure skating novice ⛸</Typography> */}
-                            {/* <Typography variant="h6">and Wikipedia rabbit-hole victim 📗</Typography> */}
-                            {/* <Typography variant="h6">and nature documentary nerd 🌎</Typography> */}
-                            {/* <Typography variant="h6">and ardent TraderJoes explorer 🛒</Typography> */}
-                            {/* <Typography variant="h6">and occaional painting dilettante 🎨</Typography> */}
+                            {/* <Text fontSize='sm'>and stackoverflow copy-n-paste expert 👩🏾‍💻</Text> */}
+                            <Text fontSize='xl'>and part-time ukulele enthusiast 🎵</Text>
+                            {/* <Text fontSize='sm'>and figure skating novice ⛸</Text> */}
+                            {/* <Text fontSize='sm'>and Wikipedia rabbit-hole victim 📗</Text> */}
+                            {/* <Text fontSize='sm'>and nature documentary nerd 🌎</Text> */}
+                            {/* <Text fontSize='sm'>and ardent TraderJoes explorer 🛒</Text> */}
+                            {/* <Text fontSize='sm'>and occaional painting dilettante 🎨</Text> */}
 
                         </Box>
-                    </Zoom>
+                    </ScaleFade>
 
-                    <Zoom in={true}>
-                        <Avatar src={AvatarImage.src} sx={{ width: 200, height: 200 }} />
-                    </Zoom>
+                    <ScaleFade initialScale={.9} in={true} >
+                        <Avatar name="Viha Gupta" src={AvatarImage.src} width="200" height="200" bg="none" />
+                    </ScaleFade>
 
                 </Stack>
+
             </Box>
 
         </>
