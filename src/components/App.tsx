@@ -19,7 +19,8 @@ export const App = () => {
             backgroundImage={currentBg}
             // style={{background: "linear-gradient(to bottom right, rgba(238,174,202,1), rgba(148,187,233,1));" }} 
             backgroundSize= "100% 100%" 
-            maxWidth= "100%" >
+            maxWidth= "100%" 
+            >
         
             <Landing />
             {/* <hr></hr> */}

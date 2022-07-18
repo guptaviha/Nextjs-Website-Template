@@ -41,12 +41,12 @@ export const Landing = () => {
             {/* Menu */}
             <Center >
                 <Box
-                    px={{ base: '50px', md: '100px', lg: '200px' }}
+                    // px={{ base: '50px', md: '100px', lg: '200px' }}
                     pt="50px"
                     id="Landing">
                     <Stack
                         direction="row"
-                        spacing={{ base: '6', md: '10', lg: '14' }} >
+                        spacing={{ base: '2', sm: '6', md: '10', lg: '14' }} >
 
                         <Link
                             href="#Landing"
@@ -144,7 +144,7 @@ export const Landing = () => {
                         <Box
                             pt="30px" >
 
-                            <Text fontSize='5xl' pl="40px">
+                            <Text fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }} pl="40px">
                                 👋🏽 Hi, I'm Viha!
                             </Text>
                             <br></br>

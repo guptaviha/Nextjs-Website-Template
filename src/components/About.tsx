@@ -37,7 +37,7 @@ export const About = () => {
 
                     <Center>
                         <Box
-                            px="20"
+                            // px="20"
                             pt="5" >
                             <Stack
                                 direction="row"
