@@ -4,7 +4,7 @@ import { About } from './About';
 import { Portfolio } from './Portfolio';
 import { Toolbox } from './Toolbox';
 import BgImageLight from '../assets/background-light.jpeg';
-import BgImageDark from '../assets/background-dark2.png';
+import BgImageDark from '../assets/background-dark3.jpeg';
 import { Container, useColorMode } from '@chakra-ui/react'
 
 export const App = () => {
@@ -15,7 +15,12 @@ export const App = () => {
 
     return (
         <>
-        <Container backgroundImage={currentBg} backgroundSize= "100% 100%" maxWidth= "100%" >
+        <Container 
+            backgroundImage={currentBg}
+            // style={{background: "linear-gradient(to bottom right, rgba(238,174,202,1), rgba(148,187,233,1));" }} 
+            backgroundSize= "100% 100%" 
+            maxWidth= "100%" >
+        
             <Landing />
             {/* <hr></hr> */}
             <About />
