@@ -53,3 +53,16 @@ html, body {
   font-family: 'mosk-100';
   src: local('Lato'), url('../fonts/mosk-100.ttf') format('truetype');
 }
+
+
+.fade-in {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all linear 0.2s;
+}
+
+.fade-out {
+  transform: translateY(10px) scale(.95);
+  opacity: 0;
+  transition: all linear 0.2s;
+}

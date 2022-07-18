@@ -5,24 +5,37 @@ import { Box, Stack, Link, Text, IconButton, Avatar, Image } from '@chakra-ui/re
 import { useDisclosure, useColorMode, Center, SlideFade } from '@chakra-ui/react'
 
 
+// const subs = [
+//     'and stackoverflow copy-n-paste expert 👩🏾‍💻',
+//     'and part-time ukulele enthusiast 🎵',
+//     'and figure skating novice ⛸',
+//     'and Wikipedia rabbit-hole victim 📗',
+//     'and nature documentary nerd 🌎',
+//     'and ardent TraderJoes explorer 🛒',
+//     'and occaional painting dilettante 🎨'
+// ];
+
+const subs = [
+    'stackoverflow copy-n-paste expert 👩🏾‍💻',
+    'part-time ukulele enthusiast 🎵',
+    'figure skating novice ⛸',
+    'Wikipedia rabbit-hole victim 📗',
+    'nature documentary nerd 🌎',
+    'ardent TraderJoes explorer 🛒',
+    'occasional painting dilettante 🎨'
+];
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+let currSubIdx = 0;
+
 export const Landing = () => {
 
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onToggle } = useDisclosure()
 
-
-    const subs = [
-        'and stackoverflow copy-n-paste expert 👩🏾‍💻',
-        'and part-time ukulele enthusiast 🎵',
-        'and figure skating novice ⛸',
-        'and Wikipedia rabbit-hole victim 📗',
-        'and nature documentary nerd 🌎',
-        'and ardent TraderJoes explorer 🛒',
-        'and occaional painting dilettante 🎨'
-    ]
-
-    let subsIndex = 0
-    const [currSub, setCurrSub] = React.useState(subs[subsIndex]);
+    let [transitionClassName, setTransitionClassName] = React.useState('fade-in');
+    // const [currSubIdx, setCurrSubIdx] = React.useState(0); 
 
     // const element=document.getElementById("subs-text");
     // setInterval(function() {element.innerHTML += "Hello"}, 1000);
@@ -30,10 +43,18 @@ export const Landing = () => {
     // document.getElementById("subs-text").innerHTML += "Hello"
 
     React.useEffect(() => {
-        setInterval(() => {
-            subsIndex == 6 ? subsIndex = 0 : subsIndex += 1;
-            setCurrSub(subs[subsIndex])
-        }, 2500);
+        setInterval(async () => {
+            setTransitionClassName('fade-out');
+            // await sleep(200);
+            setTimeout(() => {
+                const newIdx = currSubIdx === subs.length - 1 ? 0 : currSubIdx + 1;
+                // setCurrSubIdx(newIdx);
+                currSubIdx = newIdx;
+                
+                setTransitionClassName('fade-in');
+            }, 200);
+
+        }, 2300);
     }, []);
 
     return (
@@ -152,27 +173,38 @@ export const Landing = () => {
                         <Box
                             pt="20px" >
                             <Center>
-                            <Text 
-                                fontSize={{ base: '4xl', md: '5xl' }} 
-                                fontFamily="mosk-800">
-                                👋🏽 Hi, I'm Viha!
-                            </Text>
+                                <Text
+                                    fontSize={{ base: '4xl', md: '5xl' }}
+                                    fontFamily="mosk-800">
+                                    👋🏽 Hi, I'm Viha!
+                                </Text>
                             </Center>
                             <br></br>
-                            <Text 
-                                fontSize='xl'
+                            <Text
+                                fontSize='2xl'
                                 fontFamily="mosk-600">
                                 Your friendly neighborhood Software Dev
                             </Text>
 
-                            <SlideFade in={true} offsetY='20px'>
-                                <Text 
-                                    fontSize='xl' 
+                            <Stack
+                                direction="row" spacing={1}>
+                                <Text
+                                    fontSize='2xl'
                                     id="subs-text"
-                                    fontFamily="mosk-600">
-                                    {currSub}
+                                    fontFamily="mosk-600"
+                                    // className={transitionClassName}
+                                >
+                                    and
                                 </Text>
-                            </SlideFade>
+                                <Text
+                                    fontSize='2xl'
+                                    id="subs-text"
+                                    fontFamily="mosk-600"
+                                    className={transitionClassName}
+                                >
+                                    {subs[currSubIdx]}
+                                </Text>
+                            </Stack>
 
                         </Box>
 

@@ -8,12 +8,15 @@ Made with :heart: using [Next.js](https://nextjs.org/), [Chakra UI](https://chak
 - [ ] 100vh and parent display flex and align items center
 - [ ] Set maxWidth for About me etc (when screen is wide)
 - [ ] Night mode btn transition
-- [ ] dynamic subs transitions
+- [x] dynamic subs transitions
 - [ ] Try a CSS gradient background
 - [ ] Try out Vercel for analytics
 - [ ] Find better nav bar transitions
 - [ ] Snap when scrolling? - scroll-snap-type 
-- [ ] Add labels under toolbox
+- [ ] Dark and light mode screenshots
+- [ ] Export all data to a file
+- [ ] Submit to nextjs as a template
+- [x] Add labels under toolbox
 - [x] Dynamic subtitles on landing page
 - [x] Responsive
 - [x] Full page MaxWidth bug

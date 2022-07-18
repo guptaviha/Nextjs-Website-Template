@@ -21,6 +21,7 @@ export const App = () => {
                 backgroundSize="100% 100%"
                 maxWidth="100%"
                 // transition= "all 1s ease-in"
+                transition= "background-image 1s ease-in-out"
                 scrollSnapType="y proximity"
                 scrollPaddingTop= "15vh"
                 overflowY= "scroll"
