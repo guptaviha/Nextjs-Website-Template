@@ -20,13 +20,13 @@ export const Portfolio = () => {
                     id="Portfolio"
                     scrollSnapAlign="start">
 
-                    <Text 
+                    <Text
                         fontSize="2xl"
                         fontFamily="mosk-800">
                         My Portfolio
                     </Text>
                     <br></br>
-                    <Text 
+                    <Text
                         fontSize="xl"
                         fontFamily="mosk-400">
                         Check out some of my work.
@@ -55,7 +55,6 @@ export const Portfolio = () => {
                                 <Box p='6'>
                                     <Box
                                         mt='1'
-                                        // fontWeight='semibold'
                                         fontFamily="mosk-700"
                                         as='h3'
                                         lineHeight='tight'
@@ -64,7 +63,6 @@ export const Portfolio = () => {
                                     </Box>
                                     <Box
                                         as='span'
-                                        // color='gray.600'
                                         fontSize='sm'>
                                         A uniquely instant anonymous blogging website. Everything you type lives in the URL.
                                     </Box>
@@ -86,11 +84,10 @@ export const Portfolio = () => {
                                 _hover={{ boxShadow: "2xl" }}>
                                 <Image
                                     src={ElonButAIImage.src} />
-                                    <hr></hr>
+                                <hr></hr>
                                 <Box p='6'>
                                     <Box
                                         mt='1'
-                                        // fontWeight='semibold'
                                         fontFamily="mosk-700"
                                         as='h3'
                                         lineHeight='tight'
@@ -99,7 +96,6 @@ export const Portfolio = () => {
                                     </Box>
                                     <Box
                                         as='span'
-                                        // color='gray.600'
                                         fontSize='sm'>
                                         A Twitter Bot account that posts AI-generated fake tweets as Elon Musk. Fine tuned on GPT2.
                                     </Box>

@@ -1,19 +1,8 @@
 import * as React from 'react';
 import AvatarImage from '../../src/assets/avatar.png';
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
-import { Box, Stack, Link, Text, IconButton, Avatar, Image } from '@chakra-ui/react'
-import { useDisclosure, useColorMode, Center, SlideFade } from '@chakra-ui/react'
-
-
-// const subs = [
-//     'and stackoverflow copy-n-paste expert 👩🏾‍💻',
-//     'and part-time ukulele enthusiast 🎵',
-//     'and figure skating novice ⛸',
-//     'and Wikipedia rabbit-hole victim 📗',
-//     'and nature documentary nerd 🌎',
-//     'and ardent TraderJoes explorer 🛒',
-//     'and occaional painting dilettante 🎨'
-// ];
+import { Box, Stack, Link, Text, IconButton, Avatar } from '@chakra-ui/react'
+import { useDisclosure, useColorMode, Center } from '@chakra-ui/react'
 
 const subs = [
     'stackoverflow copy-n-paste expert 👩🏾‍💻',
@@ -25,32 +14,21 @@ const subs = [
     'occasional painting dilettante 🎨'
 ];
 
-const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 let currSubIdx = 0;
 
 export const Landing = () => {
 
     const { colorMode, toggleColorMode } = useColorMode();
-    const { isOpen, onToggle } = useDisclosure()
 
     let [transitionClassName, setTransitionClassName] = React.useState('fade-in');
-    // const [currSubIdx, setCurrSubIdx] = React.useState(0); 
-
-    // const element=document.getElementById("subs-text");
-    // setInterval(function() {element.innerHTML += "Hello"}, 1000);
-
-    // document.getElementById("subs-text").innerHTML += "Hello"
 
     React.useEffect(() => {
         setInterval(async () => {
             setTransitionClassName('fade-out');
-            // await sleep(200);
             setTimeout(() => {
                 const newIdx = currSubIdx === subs.length - 1 ? 0 : currSubIdx + 1;
-                // setCurrSubIdx(newIdx);
                 currSubIdx = newIdx;
-                
                 setTransitionClassName('fade-in');
             }, 200);
 
@@ -62,9 +40,7 @@ export const Landing = () => {
             {/* Menu */}
             <Center >
                 <Box
-                    // px={{ base: '50px', md: '100px', lg: '200px' }}
                     pt={{ base: '30px', md: '50px', lg: '50px' }}
-                    // pt="50px"
                     id="Landing"
                     scrollSnapAlign="start">
                     <Stack
@@ -135,7 +111,6 @@ export const Landing = () => {
 
                         <IconButton
                             _focus={{ outline: "none" }}
-                            // _hover={{ background: "rgba(255, 255, 255, 0.3)"}}
                             onClick={() => toggleColorMode()}
                             aria-label='dark mode toggle'
                             variant='ghost'
@@ -191,17 +166,14 @@ export const Landing = () => {
                                 <Text
                                     fontSize='2xl'
                                     id="subs-text"
-                                    fontFamily="mosk-600"
-                                    // className={transitionClassName}
-                                >
+                                    fontFamily="mosk-600">
                                     and
                                 </Text>
                                 <Text
                                     fontSize='2xl'
                                     id="subs-text"
                                     fontFamily="mosk-600"
-                                    className={transitionClassName}
-                                >
+                                    className={transitionClassName}>
                                     {subs[currSubIdx]}
                                 </Text>
                             </Stack>

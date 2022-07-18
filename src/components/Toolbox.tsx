@@ -86,12 +86,12 @@ export const Toolbox = () => {
                                         spacing={{ base: '30px', sm: '40px', md: '20px', lg: '30px' }} >
                                         {/* NodeJS */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     NodeJS
                                                 </Text>
@@ -100,12 +100,12 @@ export const Toolbox = () => {
 
                                         {/* React */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     React
                                                 </Text>
@@ -114,12 +114,12 @@ export const Toolbox = () => {
 
                                         {/* Go */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     Golang
                                                 </Text>
@@ -142,12 +142,12 @@ export const Toolbox = () => {
                                         spacing={{ base: '30px', sm: '40px', md: '20px', lg: '30px' }} >
                                         {/* Linux */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     Linux
                                                 </Text>
@@ -156,12 +156,12 @@ export const Toolbox = () => {
 
                                         {/* MySQL */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     MySQL
                                                 </Text>
@@ -172,12 +172,12 @@ export const Toolbox = () => {
 
                                         {/* Git */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     Git
                                                 </Text>
@@ -192,12 +192,12 @@ export const Toolbox = () => {
 
                                         {/* Bash */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     Bash
                                                 </Text>
@@ -206,12 +206,12 @@ export const Toolbox = () => {
 
                                         {/* AWS */}
                                         <Box>
-                                        <Image
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
-                                            width={{ base: '60px', md: '70px', lg: '70px' }}
-                                            height={{ base: '60px', md: '70px', lg: '70px' }}
-                                        />
-                                        <Center>
+                                            <Image
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
                                                 <Text fontFamily="mosk-500" >
                                                     AWS
                                                 </Text>

@@ -5,7 +5,7 @@ import { Portfolio } from './Portfolio';
 import { Toolbox } from './Toolbox';
 import BgImageLight from '../assets/background-light.jpeg';
 import BgImageDark from '../assets/background-dark75.jpeg';
-import { Container, useColorMode } from '@chakra-ui/react'
+import { Container, Box, useColorMode, Center } from '@chakra-ui/react'
 
 export const App = () => {
 
@@ -17,24 +17,25 @@ export const App = () => {
         <>
             <Container
                 backgroundImage={currentBg}
-                // style={{background: "linear-gradient(to bottom right, rgba(238,174,202,1), rgba(148,187,233,1));" }} 
                 backgroundSize="100% 100%"
                 maxWidth="100%"
-                // transition= "all 1s ease-in"
-                transition= "background-image 1s ease-in-out"
                 scrollSnapType="y proximity"
-                scrollPaddingTop= "15vh"
-                overflowY= "scroll"
-            >
+                scrollPaddingTop="15vh"
+                overflowY="scroll">
+                <Center>
+                    <Box maxWidth="1200px" >
 
-                <Landing />
-                {/* <hr></hr> */}
-                <About />
-                {/* <hr></hr> */}
-                <Portfolio />
-                {/* <hr></hr> */}
-                <Toolbox />
-                <hr></hr>
+
+                        <Landing />
+                        {/* <hr></hr> */}
+                        <About />
+                        {/* <hr></hr> */}
+                        <Portfolio />
+                        {/* <hr></hr> */}
+                        <Toolbox />
+                        <hr></hr>
+                    </Box>
+                </Center>
             </Container>
         </>
     );

@@ -22,20 +22,18 @@ export const About = () => {
             <Center>
                 <Box
                     px={{ base: '50px', md: '100px', lg: '200px' }}
-                    // pt="200px"
-                    // pb="200px"
                     pt={{ base: '100px', md: '150px', lg: '200px' }}
                     pb={{ base: '100px', md: '150px', lg: '200px' }}
                     id="About"
                     scrollSnapAlign="start">
 
-                    <Text 
+                    <Text
                         fontSize="2xl"
                         fontFamily="mosk-800">
                         About Me
                     </Text>
                     <br></br>
-                    <Text 
+                    <Text
                         fontSize="xl"
                         fontFamily="mosk-400">
                         {INTRO}
@@ -44,7 +42,6 @@ export const About = () => {
 
                     <Center>
                         <Box
-                            // px="20"
                             pt="5" >
                             <Stack
                                 direction="row"
@@ -56,7 +53,6 @@ export const About = () => {
                                     rel="noopener">
                                     <IconButton
                                         _focus={{ outline: "none" }}
-                                        // _hover={{ background: "rgba(255, 255, 255, 0.3)"}}
                                         variant='ghost'
                                         isRound={true}
                                         size='lg'
@@ -72,7 +68,6 @@ export const About = () => {
                                     rel="noopener">
                                     <IconButton
                                         _focus={{ outline: "none" }}
-                                        // _hover={{ background: "rgba(255, 255, 255, 0.3)"}}
                                         variant='ghost'
                                         isRound={true}
                                         size='lg'
@@ -84,7 +79,6 @@ export const About = () => {
 
                                 <IconButton
                                     _focus={{ outline: "none" }}
-                                    // _hover={{ background: "rgba(255, 255, 255, 0.3)"}}
                                     onClick={() => {
                                         navigator.clipboard.writeText("vg2237@nyu.edu");
                                         toast({
