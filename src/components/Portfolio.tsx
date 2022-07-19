@@ -1,8 +1,8 @@
 import * as React from 'react';
 import LibreImage from '../../src/assets/libre.png';
 import ElonButAIImage from '../../src/assets/elonButAI2.png';
-
 import { Box, Text, Stack, Link, Image, Center, useColorMode } from '@chakra-ui/react'
+import * as DATA from '../../data/data';
 
 export const Portfolio = () => {
 
@@ -23,13 +23,13 @@ export const Portfolio = () => {
                     <Text
                         fontSize="2xl"
                         fontFamily="mosk-800">
-                        My Portfolio
+                        {DATA.PORTFOLIO_TITLE}
                     </Text>
                     <br></br>
                     <Text
                         fontSize="xl"
                         fontFamily="mosk-400">
-                        Check out some of my work.
+                        {DATA.PORTFOLIO_DESC}
                     </Text>
                     <br></br>
 
@@ -38,7 +38,7 @@ export const Portfolio = () => {
                         spacing={4} >
 
                         <Link
-                            href="https://libre.ink"
+                            href={DATA.PROJ_1_SRC}
                             target="_blank"
                             rel="noopener"
                             style={{ textDecoration: "none" }}>
@@ -71,7 +71,7 @@ export const Portfolio = () => {
                         </Link>
 
                         <Link
-                            href="https://twitter.com/ElonButAI"
+                            href={DATA.PROJ_2_SRC}
                             target="_blank"
                             rel="noopener"
                             style={{ textDecoration: "none" }}>
@@ -92,12 +92,12 @@ export const Portfolio = () => {
                                         as='h3'
                                         lineHeight='tight'
                                         noOfLines={1}>
-                                        elonButAI
+                                        {DATA.PROJ_2_TITLE}
                                     </Box>
                                     <Box
                                         as='span'
                                         fontSize='sm'>
-                                        A Twitter Bot account that posts AI-generated fake tweets as Elon Musk. Fine tuned on GPT2.
+                                        {DATA.PROJ_2_DESC}
                                     </Box>
                                 </Box>
                             </Box>

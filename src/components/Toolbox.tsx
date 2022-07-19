@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Text, Stack, Image, Center, Container } from '@chakra-ui/react'
+import * as DATA from '../../data/data';
 
 export const Toolbox = () => {
 
@@ -17,13 +18,13 @@ export const Toolbox = () => {
                     <Text
                         fontSize="2xl"
                         fontFamily="mosk-800">
-                        My Toolbox
+                        {DATA.TOOLBOX_TITLE}
                     </Text>
                     <br></br>
                     <Text
                         fontSize="xl"
                         fontFamily="mosk-400">
-                        Ever expanding, but here are the tools currently at my disposal.
+                        {DATA.TOOLBOX_DESC}
                     </Text>
                     <br></br>
 
@@ -40,13 +41,13 @@ export const Toolbox = () => {
                                         {/* Python */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                                src={DATA.PYTHON_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Python
+                                                    {DATA.PYTHON_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -54,13 +55,13 @@ export const Toolbox = () => {
                                         {/* JS */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                                src={DATA.JAVASCRIPT_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Javascript
+                                                    {DATA.JAVASCRIPT_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -68,13 +69,13 @@ export const Toolbox = () => {
                                         {/* TS */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                                src={DATA.TYPESCRIPT_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Typescript
+                                                    {DATA.TYPESCRIPT_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -87,13 +88,13 @@ export const Toolbox = () => {
                                         {/* NodeJS */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                                src={DATA.NODEJS_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    NodeJS
+                                                    {DATA.NODEJS_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -101,13 +102,13 @@ export const Toolbox = () => {
                                         {/* React */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                                src={DATA.REACT_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    React
+                                                    {DATA.REACT_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -115,13 +116,13 @@ export const Toolbox = () => {
                                         {/* Go */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
+                                                src={DATA.GOLANG_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Golang
+                                                    {DATA.GOLANG_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -143,13 +144,13 @@ export const Toolbox = () => {
                                         {/* Linux */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                                                src={DATA.LINUX_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Linux
+                                                    {DATA.LINUX_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -157,13 +158,13 @@ export const Toolbox = () => {
                                         {/* MySQL */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                                src={DATA.MYSQL_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    MySQL
+                                                    {DATA.MYSQL_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -173,13 +174,13 @@ export const Toolbox = () => {
                                         {/* Git */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                                src={DATA.GIT_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Git
+                                                    {DATA.GIT_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -193,13 +194,13 @@ export const Toolbox = () => {
                                         {/* Bash */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                                                src={DATA.BASH_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    Bash
+                                                    {DATA.BASH_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>
@@ -207,13 +208,13 @@ export const Toolbox = () => {
                                         {/* AWS */}
                                         <Box>
                                             <Image
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                                                src={DATA.AWS_SRC}
                                                 width={{ base: '60px', md: '70px', lg: '70px' }}
                                                 height={{ base: '60px', md: '70px', lg: '70px' }}
                                             />
                                             <Center>
                                                 <Text fontFamily="mosk-500" >
-                                                    AWS
+                                                    {DATA.AWS_LABEL}
                                                 </Text>
                                             </Center>
                                         </Box>

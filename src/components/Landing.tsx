@@ -2,18 +2,8 @@ import * as React from 'react';
 import AvatarImage from '../../src/assets/avatar.png';
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 import { Box, Stack, Link, Text, IconButton, Avatar } from '@chakra-ui/react'
-import { useDisclosure, useColorMode, Center } from '@chakra-ui/react'
-
-const subs = [
-    'stackoverflow copy-n-paste expert 👩🏾‍💻',
-    'part-time ukulele enthusiast 🎵',
-    'figure skating novice ⛸',
-    'Wikipedia rabbit-hole victim 📗',
-    'nature documentary nerd 🌎',
-    'ardent TraderJoes explorer 🛒',
-    'occasional painting dilettante 🎨'
-];
-
+import { useColorMode, Center } from '@chakra-ui/react'
+import * as DATA from '../../data/data';
 
 let currSubIdx = 0;
 
@@ -27,7 +17,7 @@ export const Landing = () => {
         setInterval(async () => {
             setTransitionClassName('fade-out');
             setTimeout(() => {
-                const newIdx = currSubIdx === subs.length - 1 ? 0 : currSubIdx + 1;
+                const newIdx = currSubIdx === DATA.SUBS.length - 1 ? 0 : currSubIdx + 1;
                 currSubIdx = newIdx;
                 setTransitionClassName('fade-in');
             }, 200);
@@ -55,7 +45,7 @@ export const Landing = () => {
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }} >
-                                Home
+                                {DATA.HOME_MENU}
                             </Text>
                         </Link>
 
@@ -67,7 +57,7 @@ export const Landing = () => {
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
-                                About
+                                {DATA.ABOUT_MENU}
                             </Text>
                         </Link>
 
@@ -79,7 +69,7 @@ export const Landing = () => {
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
-                                Portfolio
+                                {DATA.PORTFOLIO_MENU}
                             </Text>
                         </Link>
 
@@ -91,12 +81,12 @@ export const Landing = () => {
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
-                                Toolbox
+                                {DATA.TOOLBOX_MENU}
                             </Text>
                         </Link>
 
                         <Link
-                            href="https://drive.google.com/file/d/1rSQnWD5ALtBDj2-x0GHApMcHRIgeXgw1/view?usp=sharing"
+                            href={DATA.RESUME_SRC}
                             target="_blank"
                             style={{ textDecoration: "none" }}
                             rel="noopener">
@@ -105,7 +95,7 @@ export const Landing = () => {
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
-                                Resume
+                                {DATA.RESUME_MENU}
                             </Text>
                         </Link>
 
@@ -137,7 +127,7 @@ export const Landing = () => {
                         {/* Avatar Part */}
                         <Center>
                             <Avatar
-                                name="Viha Gupta"
+                                name={DATA.AVATAR_NAME}
                                 src={AvatarImage.src}
                                 width={{ base: '150px', md: '150px', lg: '200px' }}
                                 height={{ base: '150px', md: '150px', lg: '200px' }}
@@ -151,14 +141,14 @@ export const Landing = () => {
                                 <Text
                                     fontSize={{ base: '4xl', md: '5xl' }}
                                     fontFamily="mosk-800">
-                                    👋🏽 Hi, I'm Viha!
+                                {DATA.GREETING_TXT}
                                 </Text>
                             </Center>
                             <br></br>
                             <Text
                                 fontSize='2xl'
                                 fontFamily="mosk-600">
-                                Your friendly neighborhood Software Dev
+                                {DATA.INTRO_TITLE}
                             </Text>
 
                             <Stack
@@ -174,7 +164,7 @@ export const Landing = () => {
                                     id="subs-text"
                                     fontFamily="mosk-600"
                                     className={transitionClassName}>
-                                    {subs[currSubIdx]}
+                                    {DATA.SUBS[currSubIdx]}
                                 </Text>
                             </Stack>
 
