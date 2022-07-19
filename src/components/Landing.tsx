@@ -41,7 +41,7 @@ export const Landing = () => {
                             href="#Landing"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='xlg'
+                                fontSize='md'
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }} >
@@ -53,7 +53,7 @@ export const Landing = () => {
                             href="#About"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='xlg'
+                                fontSize='md'
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -65,7 +65,7 @@ export const Landing = () => {
                             href="#Portfolio"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='xlg'
+                                fontSize='md'
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -77,7 +77,7 @@ export const Landing = () => {
                             href="#Toolbox"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='xlg'
+                                fontSize='md'
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -91,7 +91,7 @@ export const Landing = () => {
                             style={{ textDecoration: "none" }}
                             rel="noopener">
                             <Text
-                                fontSize='xlg'
+                                fontSize='md'
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -146,25 +146,27 @@ export const Landing = () => {
                             </Center>
                             <br></br>
                             <Text
-                                fontSize='2xl'
+                                // fontSize='2xl'
+                                fontSize={{ base: 'xl', md: '2xl' }}
                                 fontFamily="mosk-600">
                                 {DATA.INTRO_TITLE}
                             </Text>
 
                             <Stack
                                 direction="row" spacing={1}>
-                                <Text
+                                {/* <Text
                                     fontSize='2xl'
                                     id="subs-text"
                                     fontFamily="mosk-600">
                                     and
-                                </Text>
+                                </Text> */}
                                 <Text
-                                    fontSize='2xl'
+                                    // fontSize='2xl'
+                                    fontSize={{ base: 'xl', md: '2xl' }}
                                     id="subs-text"
                                     fontFamily="mosk-600"
                                     className={transitionClassName}>
-                                    {DATA.SUBS[currSubIdx]}
+                                    and {DATA.SUBS[currSubIdx]}
                                 </Text>
                             </Stack>
 
