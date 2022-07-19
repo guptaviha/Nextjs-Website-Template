@@ -30,7 +30,7 @@ export const INTRO_TITLE = "Your friendly neighborhood Software Dev"
 export const ABOUT_TITLE = "About Me"
 export const ABOUT_DESC = `Say hello to the next newest additon to your team. I'm Viha 
 Gupta, a zealous Software Dev based in NYC. As a recent CS grad with prior 
-work ex, I'm ready to dive head-first into changing the word one semicolon 
+work ex, I'm ready to dive head-first into changing the world, one semicolon 
 at a time. Give me a shot and let's rock the corporate world together.`
 export const GITHUB_SRC = "https://github.com/guptaviha/"
 export const LINKEDIN_SRC = "https://www.linkedin.com/in/vihagupta/"
