@@ -10,15 +10,17 @@ Use this template as a starter for your next website. Just download, make your e
  - Responsive design: Built for device responsiveness across laptops, tablets, and phones
  - Ready-to-use: Just replace your data in one central file
  - Flexible: Made using Chakra components. Easy to customize to your specific needs
- - Dark Mode: Support for dark mode
+ - Dark Mode: Support for dark mode available
 
 ## Simple Steps to Host
 1. Clone the repo to your local machine
-2. Navigate to the /data dir. Make your edits to the data.ts file
-3. Install npm on your machine if you havent already
-4. To run the code on your you the project using the following command
+2. Navigate to the ```/data``` dir. Make your edits to the file names ```data.ts```
+3. Install npm on your machine if you havent already done so. (Tutorial [here](https://phoenixnap.com/kb/install-node-js-npm-on-windows))
+4. To see the website in action on your local machine, run the following command
     ```npm run dev```
 5. The site should be visible on ```localhost:3000``` in your browser
+6. Make sure to push your changes to a GitHub repo
+7. Once ready to host, you can head on to a tool like [Netlify](https://www.netlify.com/) to make it live. Just sign up, create a new site, link your GitHub repo and enjoy!
 
 ## Credits
 Made possible thanks to the following free asset resources
@@ -31,30 +33,27 @@ Made possible thanks to the following free asset resources
 
  ---
 
+## Tasks
+
 ### TO DO List
-- [ ] 100vh and parent display flex and align items center
 - [ ] Change toolbox logic from stack to flex
 - [ ] Try out Vercel for analytics
 - [ ] Snap when scrolling? - buggy 
 - [ ] Dark and light mode screenshots
 - [ ] Submit to nextjs as a template
 - [ ] Find better nav bar transitions - optional
-- [ ] Night mode btn transition - optional
+- [ ] Dark mode btn transition - optional
 
-### Completes
-- [x] Export all data to a file
-- [x] Set maxWidth for About me etc (when screen is wide)
-- [x] dynamic subs transitions
-- [x] Add labels under toolbox
+### Completed
+- [x] Export all data to a central file
+- [x] Set maxWidth for when the screen is wide
+- [x] Add labels under toolbox tools
 - [x] Dynamic subtitles on landing page
-- [x] Responsive
-- [x] Full page MaxWidth bug
-- [x] Use better fonts like Mosk
-- [x] Night mode
+- [x] Responsive design
+- [x] Upgrade fonts to Mosk
+- [x] Add dark mode support
 - [x] Animate scroll on toolbar click
-- [x] Bug with images not showing
-- [x] Add screenshots to projects
-- [x] Add resume
+- [x] Add resume link
 - [x] Copy to clipboard for email
 
 
