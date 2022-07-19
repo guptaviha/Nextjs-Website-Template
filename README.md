@@ -28,7 +28,6 @@ Made possible thanks to the following free asset resources
  - [AvatarMaker](https://avatarmaker.net/)
  - [SetAsWall](https://www.setaswall.com/gradient-wallpapers/gradient-phone-wallpaper-043/)
  - [GitHub](https://github.com/brave/brave-browser/issues/8061)
- https://cdn.wallpapersafari.com/75/35/3RrO1B.png
  - [Fonts](https://www.cufonfonts.com/font/mosk)
 
  ---
