@@ -19,7 +19,7 @@ export const ABOUT_MENU = "About"
 export const PORTFOLIO_MENU = "Portfolio"
 export const TOOLBOX_MENU = "Toolbox"
 export const RESUME_MENU = "Resume"
-export const RESUME_SRC = "https://drive.google.com/file/d/1rSQnWD5ALtBDj2-x0GHApMcHRIgeXgw1/view?usp=sharing"
+export const RESUME_SRC = "https://drive.google.com/file/d/1jfpo75AAs2f4MQUaD8DXvAs39RIGQFI1/view?usp=sharing"
 export const AVATAR_NAME = "Viha Gupta"
 
 export const GREETING_TXT = "👋🏽 Hi, I'm Viha!"
@@ -33,7 +33,7 @@ Gupta, a zealous Software Dev based in NYC. As a recent CS grad with prior
 work ex, I'm ready to dive head-first into changing the world, one semicolon 
 at a time. Give me a shot and let's rock the corporate world together.`
 export const GITHUB_SRC = "https://github.com/guptaviha/"
-export const LINKEDIN_SRC = "https://www.linkedin.com/in/vihagupta/"
+export const LINKEDIN_SRC = "https://www.linkedin.com/in/guptaviha/"
 export const EMAIL = "vg2237@nyu.edu"
 export const EMAIL_TOAST_TXT = `vg2237@nyu.edu \n
 Copied to clipboard.`
