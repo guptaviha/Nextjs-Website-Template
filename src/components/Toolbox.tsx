@@ -141,6 +141,20 @@ export const Toolbox = () => {
                                     <Stack
                                         direction="row"
                                         spacing={{ base: '30px', sm: '40px', md: '20px', lg: '30px' }} >
+                                        {/* Django */}
+                                        <Box>
+                                            <Image
+                                                src={DATA.DJANGO_SRC}
+                                                width={{ base: '60px', md: '70px', lg: '70px' }}
+                                                height={{ base: '60px', md: '70px', lg: '70px' }}
+                                            />
+                                            <Center>
+                                                <Text fontFamily="mosk-500" >
+                                                    {DATA.DJANGO_LABEL}
+                                                </Text>
+                                            </Center>
+                                        </Box>
+
                                         {/* Linux */}
                                         <Box>
                                             <Image
@@ -169,7 +183,13 @@ export const Toolbox = () => {
                                             </Center>
                                         </Box>
 
-                                        {/* Spark */}
+                                        
+                                    </Stack>
+                                </Box>
+                                <Box>
+                                    <Stack
+                                        direction="row"
+                                        spacing={{ base: '30px', sm: '40px', md: '20px', lg: '30px' }} >
 
                                         {/* Git */}
                                         <Box>
@@ -184,13 +204,7 @@ export const Toolbox = () => {
                                                 </Text>
                                             </Center>
                                         </Box>
-                                    </Stack>
-                                </Box>
-                                <Box>
-                                    <Stack
-                                        direction="row"
-                                        spacing={{ base: '30px', sm: '40px', md: '20px', lg: '30px' }} >
-
+                                        
                                         {/* Bash */}
                                         <Box>
                                             <Image

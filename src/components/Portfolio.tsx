@@ -1,6 +1,8 @@
 import * as React from 'react';
 import LibreImage from '../../src/assets/libre.png';
 import ElonButAIImage from '../../src/assets/elonButAI2.png';
+import NYCBasics from '../../src/assets/NYCBasics.png';
+
 import { Box, Text, Stack, Link, Image, Center, useColorMode } from '@chakra-ui/react'
 import * as DATA from '../../data/data';
 
@@ -98,6 +100,39 @@ export const Portfolio = () => {
                                         as='span'
                                         fontSize='sm'>
                                         {DATA.PROJ_2_DESC}
+                                    </Box>
+                                </Box>
+                            </Box>
+                        </Link>
+
+                        <Link
+                            href={DATA.PROJ_3_SRC}
+                            target="_blank"
+                            rel="noopener"
+                            style={{ textDecoration: "none" }}>
+                            <Box
+                                maxW={{ base: 'sm', md: 'xl' }}
+                                borderWidth='1px'
+                                borderRadius='lg'
+                                overflow='hidden'
+                                bg={cardBg}
+                                _hover={{ boxShadow: "2xl" }}>
+                                <Image
+                                    src={NYCBasics.src} />
+                                <hr></hr>
+                                <Box p='6'>
+                                    <Box
+                                        mt='1'
+                                        fontFamily="mosk-700"
+                                        as='h3'
+                                        lineHeight='tight'
+                                        noOfLines={1}>
+                                        {DATA.PROJ_3_TITLE}
+                                    </Box>
+                                    <Box
+                                        as='span'
+                                        fontSize='sm'>
+                                        {DATA.PROJ_3_DESC}
                                     </Box>
                                 </Box>
                             </Box>
