@@ -19,7 +19,7 @@ export const ABOUT_MENU = "About"
 export const PORTFOLIO_MENU = "Portfolio"
 export const TOOLBOX_MENU = "Toolbox"
 export const RESUME_MENU = "Resume"
-export const RESUME_SRC = "https://drive.google.com/file/d/1jfpo75AAs2f4MQUaD8DXvAs39RIGQFI1/view?usp=sharing"
+export const RESUME_SRC = "https://drive.google.com/file/d/1adbVEQlOiig7DPj63MIAwBXMHYW7_RSZ/view?usp=sharing"
 export const AVATAR_NAME = "Viha Gupta"
 
 export const GREETING_TXT = "👋🏽 Hi, I'm Viha!"
