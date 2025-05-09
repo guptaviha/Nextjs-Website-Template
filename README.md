@@ -47,7 +47,7 @@ Made possible thanks to the following free asset resources
 - [x] Export all data to a central file
 - [x] Set maxWidth for when the screen is wide
 - [x] Add labels under toolbox tools
-- [x] Dynamic subtitles on landing page
+- [x] Dynamic subtitles on intro page
 - [x] Responsive design
 - [x] Upgrade fonts to Mosk
 - [x] Add dark mode support

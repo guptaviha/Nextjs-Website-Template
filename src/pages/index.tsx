@@ -8,9 +8,10 @@ import { ColorModeScript } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import * as DATA from '../../data/data';
 
-const Index: NextPage = () => {
+function Index(){
 
   return (
+    <>
     <Container>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <ChakraProvider theme={theme}>
@@ -26,6 +27,7 @@ const Index: NextPage = () => {
         <App />
       </ChakraProvider>
     </Container >
+    </>
   );
 };
 

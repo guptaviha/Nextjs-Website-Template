@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Landing } from './Landing';
+import { Intro } from './Intro';
 import { About } from './About';
 import { Portfolio } from './Portfolio';
 import { Toolbox } from './Toolbox';
 import BgImageLight from '../assets/background-light.jpeg';
 import BgImageDark from '../assets/background-dark.jpeg';
 import { Container, Box, useColorMode, Center } from '@chakra-ui/react'
+import { MainMenu } from './MainMenu';
 
 export const App = () => {
 
@@ -24,7 +25,8 @@ export const App = () => {
                 overflowY="scroll">
                 <Center>
                     <Box maxWidth="1200px" >
-                        <Landing />
+                        <MainMenu />
+                        <Intro />
                         <About />
                         <Portfolio />
                         <Toolbox />

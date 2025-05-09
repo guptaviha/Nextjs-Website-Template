@@ -3,7 +3,7 @@ export const APP_TITLE = "Viha Gupta";
 export const APP_DESC = "Welcome to my corner of the web!";
 export const OG_IMAGE_SRC = "https://i.ibb.co/s9vx1g5/og-image.png";
 
-// Landing.tsx
+// Intro.tsx
 export const SUBS = [
     'stackoverflow copy-n-paste expert 👩🏾‍💻',
     'part-time ukulele enthusiast 🎵',
@@ -18,6 +18,7 @@ export const HOME_MENU = "Home"
 export const ABOUT_MENU = "About"
 export const PORTFOLIO_MENU = "Portfolio"
 export const TOOLBOX_MENU = "Toolbox"
+export const BLOG_MENU = "Blog"
 export const RESUME_MENU = "Resume"
 export const RESUME_SRC = "https://drive.google.com/file/d/1adbVEQlOiig7DPj63MIAwBXMHYW7_RSZ/view?usp=sharing"
 export const AVATAR_NAME = "Viha Gupta"
@@ -68,7 +69,7 @@ export const LINUX_SRC = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lin
 export const MYSQL_SRC = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
 export const GIT_SRC = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
 export const BASH_SRC = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-export const AWS_SRC = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+export const AWS_SRC = "https://github.com/devicons/devicon/blob/v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
 
 export const PYTHON_LABEL = "Python"
 export const JAVASCRIPT_LABEL = "Javascript"
