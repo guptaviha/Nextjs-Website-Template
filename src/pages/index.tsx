@@ -7,14 +7,17 @@ import theme from '../theme/theme';
 import { ColorModeScript } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import * as DATA from '../../data/data';
+import Layout from './layout';
+
+
 
 function Index(){
 
   return (
     <>
-    <Container>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <ChakraProvider theme={theme}>
+    {/* <Container> */}
+      {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <ChakraProvider theme={theme}> */}
         <Head>
           <title>{DATA.APP_TITLE}</title>
           <meta name="keywords" content={DATA.APP_TITLE}></meta>
@@ -25,10 +28,15 @@ function Index(){
           <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0' />
         </Head>
         <App />
-      </ChakraProvider>
-    </Container >
+      {/* </ChakraProvider> */}
+    {/* </Container > */}
     </>
   );
+};
+
+Index.getLayout = function getLayout(page) {
+  console.log('Index.getLayout');
+  return <Layout>{page}</Layout>;
 };
 
 export default Index;

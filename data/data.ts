@@ -83,3 +83,7 @@ export const MYSQL_LABEL = "MySQL"
 export const GIT_LABEL = "Git"
 export const BASH_LABEL = "Bash"
 export const AWS_LABEL = "AWS"
+
+// Blog
+export const BLOG_TITLE = "Vee's Musings"
+export const BLOG_DESC = `Here's is where I share my thoughts.`
