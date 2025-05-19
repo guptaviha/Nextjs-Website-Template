@@ -183,7 +183,7 @@ export const Toolbox = () => {
                                             </Center>
                                         </Box>
 
-                                        
+
                                     </Stack>
                                 </Box>
                                 <Box>
@@ -204,7 +204,7 @@ export const Toolbox = () => {
                                                 </Text>
                                             </Center>
                                         </Box>
-                                        
+
                                         {/* Bash */}
                                         <Box>
                                             <Image

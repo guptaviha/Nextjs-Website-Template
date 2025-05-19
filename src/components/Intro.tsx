@@ -50,7 +50,7 @@ export const Intro = () => {
                                 <Text
                                     fontSize={{ base: '4xl', md: '5xl' }}
                                     fontFamily="mosk-800">
-                                {DATA.GREETING_TXT}
+                                    {DATA.GREETING_TXT}
                                 </Text>
                             </Center>
                             <br></br>

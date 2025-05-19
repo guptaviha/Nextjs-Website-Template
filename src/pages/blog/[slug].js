@@ -50,13 +50,11 @@ export default function Post({ postData }) {
           backgroundRepeat="repeat-y"
           scrollSnapType="y proximity"
           scrollPaddingTop="15vh"
-        // overflowY="scroll"
         >
           <Center>
             <Box maxWidth="1200px" >
               <MainMenu />
               <Box
-                // px={{ base: '50px', md: '100px', lg: '200px' }}
                 pt={'30px'}
                 pb={'200px'}
               >

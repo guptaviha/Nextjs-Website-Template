@@ -11,25 +11,25 @@ import Layout from './layout';
 
 
 
-function Index(){
+function Index() {
 
   return (
     <>
-    {/* <Container> */}
+      {/* <Container> */}
       {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <ChakraProvider theme={theme}> */}
-        <Head>
-          <title>{DATA.APP_TITLE}</title>
-          <meta name="keywords" content={DATA.APP_TITLE}></meta>
-          <meta http-equiv='X-UA-Compatible' content='IE=edge'></meta>
-          <meta property="og:title" content={DATA.APP_TITLE} />
-          <meta property="og:description" content={DATA.APP_DESC} />
-          <meta property="og:image" content={DATA.OG_IMAGE_SRC} />
-          <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0' />
-        </Head>
-        <App />
+      <Head>
+        <title>{DATA.APP_TITLE}</title>
+        <meta name="keywords" content={DATA.APP_TITLE}></meta>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'></meta>
+        <meta property="og:title" content={DATA.APP_TITLE} />
+        <meta property="og:description" content={DATA.APP_DESC} />
+        <meta property="og:image" content={DATA.OG_IMAGE_SRC} />
+        <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0' />
+      </Head>
+      <App />
       {/* </ChakraProvider> */}
-    {/* </Container > */}
+      {/* </Container > */}
     </>
   );
 };

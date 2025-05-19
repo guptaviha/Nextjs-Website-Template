@@ -20,7 +20,6 @@ export function getSortedPostsData() {
       content: matterResult.content,
     };
   });
-  // Sort posts by date or any field you like
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 

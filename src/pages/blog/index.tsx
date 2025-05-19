@@ -47,12 +47,10 @@ export default function Index({ allPostsData }) {
                     backgroundRepeat="repeat-y"
                     scrollSnapType="y proximity"
                     scrollPaddingTop="15vh"
-                // overflowY="scroll"
                 >
                     <Center>
                         <Box maxWidth="1200px" >
                             <MainMenu />
-                            {/* <Center> */}
                             <Box
                                 px={{ base: '50px', md: '100px', lg: '200px' }}
                                 pt={'50px'}
@@ -72,15 +70,12 @@ export default function Index({ allPostsData }) {
                                 </Text>
                                 <br></br>
                             </Box>
-                            {/* </Center> */}
                             <Box
                                 px={{ base: '50px', md: '100px', lg: '200px' }}
-                                // pt={'50px'}
                                 pb={'200px'}
                                 scrollSnapAlign="start">
                                 <SimpleGrid
                                     columns={{ base: 1, md: 2, lg: 3 }}
-                                    // spacing={4} 
                                     columnGap="4" rowGap="4"
                                 >
                                     {paginatedPosts?.map(({ slug, title, date, desc }) => (
@@ -99,10 +94,10 @@ export default function Index({ allPostsData }) {
                                                 _hover={{ boxShadow: "2xl" }}>
                                                 <hr></hr>
                                                 <Box p='6'>
-                                                <Box
+                                                    <Box
                                                         as='span'
                                                         fontSize='sm'>
-                                                        {'\n'+date}
+                                                        {date}
                                                     </Box>
                                                     <Box
                                                         mt='1'
@@ -118,8 +113,6 @@ export default function Index({ allPostsData }) {
                                                         noOfLines={2}>
                                                         {desc}
                                                     </Box>
-                                                    {/* <br></br> */}
-                                                    
                                                 </Box>
                                             </Box>
                                         </Link>
@@ -152,7 +145,6 @@ export default function Index({ allPostsData }) {
                                         </Button>
                                     </ButtonGroup>
                                 </Center>
-
                             </Box>
                         </Box>
                     </Center>
