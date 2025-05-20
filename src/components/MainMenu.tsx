@@ -24,7 +24,7 @@ export const MainMenu = () => {
                             href="/#Intro"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='md'
+                                fontSize={{ base: 'sm', sm: 'md' }}
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }} >
@@ -36,7 +36,7 @@ export const MainMenu = () => {
                             href="/#About"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='md'
+                                fontSize={{ base: 'sm', sm: 'md' }}
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -48,7 +48,7 @@ export const MainMenu = () => {
                             href="/#Portfolio"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='md'
+                                fontSize={{ base: 'sm', sm: 'md' }}
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -60,7 +60,7 @@ export const MainMenu = () => {
                             href="/#Toolbox"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='md'
+                                fontSize={{ base: 'sm', sm: 'md' }}
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -72,7 +72,7 @@ export const MainMenu = () => {
                             href="/blog"
                             style={{ textDecoration: "none" }}>
                             <Text
-                                fontSize='md'
+                                fontSize={{ base: 'sm', sm: 'md' }}
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
@@ -86,7 +86,7 @@ export const MainMenu = () => {
                             style={{ textDecoration: "none" }}
                             rel="noopener">
                             <Text
-                                fontSize='md'
+                                fontSize={{ base: 'sm', sm: 'md' }}
                                 fontFamily="mosk-600"
                                 _hover={{ transform: "scale(1.1)" }}
                                 style={{ transition: "transform .5s ease-in-out" }}>
