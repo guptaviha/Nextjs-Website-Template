@@ -13,17 +13,14 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
-    console.log('RootLayout');
     return (
         <html lang="en" suppressHydrationWarning>
             <Suspense>
                 <ColorModeScript initialColorMode={theme.config.initialColorMode} />
                 <ChakraProvider theme={theme}>
-
                     <body suppressHydrationWarning>
                         {children}
                     </body>
-
                 </ChakraProvider>
             </Suspense>
         </html>

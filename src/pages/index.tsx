@@ -21,7 +21,7 @@ function Index() {
       <Head>
         <title>{DATA.APP_TITLE}</title>
         <meta name="keywords" content={DATA.APP_TITLE}></meta>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'></meta>
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge'></meta>
         <meta property="og:title" content={DATA.APP_TITLE} />
         <meta property="og:description" content={DATA.APP_DESC} />
         <meta property="og:image" content={DATA.OG_IMAGE_SRC} />
@@ -35,7 +35,6 @@ function Index() {
 };
 
 Index.getLayout = function getLayout(page) {
-  console.log('Index.getLayout');
   return <Layout>{page}</Layout>;
 };
 
