@@ -2,6 +2,7 @@
 title: "The Lipstick Effect"
 desc: "A look into consumer behavior."
 date: "2025-05-19"
+pinned: "no"
 ---
 
 Hello World,  

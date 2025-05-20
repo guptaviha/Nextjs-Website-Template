@@ -2,6 +2,7 @@
 title: "Why Games tho?"
 desc: "Look around. They're everywhere."
 date: "2025-05-19"
+pinned: "no"
 ---
 
 Hello World,  

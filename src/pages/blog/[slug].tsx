@@ -2,7 +2,7 @@
 import { getAllPostSlugs, getPostData } from '../../components/Posts';
 import { remark } from 'remark';
 import html from 'remark-html';
-import { Container, Box, useColorMode, Center, Text, Link, IconButton } from '@chakra-ui/react'
+import { Container, Box, useColorMode, Center, Text, Link, IconButton, Button } from '@chakra-ui/react'
 import BgImageLight from '../../assets/background-light.jpeg';
 import BgImageDark from '../../assets/background-dark.jpeg';
 import { MainMenu } from '../../components/MainMenu';
@@ -53,22 +53,25 @@ export default function Post({ postData }) {
             <MainMenu />
             <Box
               pt={'30px'}
-              pb={'200px'}
-            >
+              pb={'200px'}>
+
+              {/* Back Button */}
               <Box pb={'30px'}>
                 <Link
                   href="/blog"
                   target="_self"
                   rel="noopener">
-                  <IconButton
+                  <Button
                     _focus={{ outline: "none" }}
                     variant='ghost'
-                    isRound={true}
-                    size='lg'
-                    fontSize='30px'
+                    size='md'
                     aria-label='Back Btn'
-                    icon={<AiOutlineArrowLeft />}
-                  />
+                  >
+                    <AiOutlineArrowLeft />
+                    <Text pl={2}>
+                      Back to Blog
+                    </Text>
+                  </Button>
                 </Link>
               </Box>
 
@@ -97,6 +100,7 @@ export default function Post({ postData }) {
                   <Markdown>{postData.content}</Markdown>
                 </Box>
               </Box>
+              
             </Box>
           </Box>
         </Center>

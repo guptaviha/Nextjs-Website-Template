@@ -2,6 +2,7 @@
 title: "If Not Now, Then When?"
 desc: "My journey to starting a business."
 date: "2025-05-19"
+pinned: "yes"
 ---
 
 Hello World,  
