@@ -1,5 +1,5 @@
 // pages/blog/[slug].js
-import { getAllPostSlugs, getPostData } from '../../components/posts';
+import { getAllPostSlugs, getPostData } from '../../components/Posts';
 import { remark } from 'remark';
 import html from 'remark-html';
 import { ColorModeScript } from '@chakra-ui/react';
@@ -64,7 +64,6 @@ export default function Post({ postData }) {
                     target="_self"
                     rel="noopener">
                     <IconButton
-                      href="/blog"
                       _focus={{ outline: "none" }}
                       variant='ghost'
                       isRound={true}
