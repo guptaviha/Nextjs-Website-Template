@@ -3,8 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-// const postsDirectory = path.join(process.cwd(), 'data');
-const postsDirectory = '/Users/vihagupta/Documents/code/Nextjs-Website-Template/data/posts';
+
+const postsDirectory = path.join(process.cwd(), 'data/posts');
 
 export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
