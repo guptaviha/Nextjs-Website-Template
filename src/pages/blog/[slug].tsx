@@ -10,6 +10,11 @@ import BgImageLight from '../../assets/background-light.jpeg';
 import BgImageDark from '../../assets/background-dark.jpeg';
 import { MainMenu } from '../../components/MainMenu';
 import { AiOutlineArrowLeft } from "react-icons/ai"
+import Markdown from 'react-markdown'
+
+
+
+let cardBg = `gray.700`
 
 export async function getStaticPaths() {
   const paths = getAllPostSlugs();
@@ -23,6 +28,7 @@ export async function getStaticProps({ params }) {
   const postData = getPostData(params.slug);
   const processedContent = await remark().use(html).process(postData.content);
   const contentHtml = processedContent.toString();
+
 
   return {
     props: {
@@ -45,12 +51,12 @@ export default function Post({ postData }) {
       <ChakraProvider theme={theme}>
         <Container
           backgroundImage={currentBg}
-          backgroundSize="100%"
+          backgroundSize="100% 100%"
           maxWidth="100%"
-          backgroundRepeat="repeat-y"
+          height="100vh"
           scrollSnapType="y proximity"
           scrollPaddingTop="15vh"
-        >
+          overflowY="scroll">
           <Center>
             <Box maxWidth="1200px" >
               <MainMenu />
@@ -69,20 +75,37 @@ export default function Post({ postData }) {
                       isRound={true}
                       size='lg'
                       fontSize='30px'
-                      aria-label='Github Btn'
+                      aria-label='Back Btn'
                       icon={<AiOutlineArrowLeft />}
                     />
                   </Link>
                 </Box>
-                <Text fontSize={{ base: 'md', md: 'md' }}
-                  fontFamily="mosk-800">
-                  {postData.date}
-                </Text>
-                <Text fontSize={{ base: 'xl', md: '2xl' }}
-                  fontFamily="mosk-800">
-                  {postData.title}</Text>
-                <br />
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+                {/* The Blog */}
+                <Box
+                  maxW={{ base: 'sm', md: '3xl' }}
+                  borderWidth='1px'
+                  borderRadius='lg'
+                  overflow='hidden'
+                  bg={'gray.50'}
+                  shadow={"xl"}
+                >
+                  <hr></hr>
+                  <Box p='10'>
+                    <Text fontSize={{ base: 'md', md: 'md' }}
+                      fontFamily="mosk-800">
+                      {postData.date}
+                    </Text>
+
+                    <Text fontSize={{ base: 'xl', md: '2xl' }}
+                      fontFamily="mosk-800">
+                      {postData.title}
+                    </Text>
+
+                    <br />
+                    <Markdown>{postData.content}</Markdown>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           </Center>

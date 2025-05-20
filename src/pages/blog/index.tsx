@@ -42,12 +42,12 @@ export default function Index({ allPostsData }) {
             <ChakraProvider theme={theme}>
                 <Container
                     backgroundImage={currentBg}
-                    backgroundSize="100%"
+                    backgroundSize="100% 100%"
                     maxWidth="100%"
-                    backgroundRepeat="repeat-y"
+                    height="100vh"
                     scrollSnapType="y proximity"
                     scrollPaddingTop="15vh"
-                >
+                    overflowY="scroll">
                     <Center>
                         <Box maxWidth="1200px" >
                             <MainMenu />
@@ -91,6 +91,7 @@ export default function Index({ allPostsData }) {
                                                 borderRadius='lg'
                                                 overflow='hidden'
                                                 bg={cardBg}
+                                                shadow={"xl"}
                                                 _hover={{ boxShadow: "2xl" }}>
                                                 <hr></hr>
                                                 <Box p='6'>

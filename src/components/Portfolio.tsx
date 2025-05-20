@@ -50,6 +50,7 @@ export const Portfolio = () => {
                                 borderRadius='lg'
                                 overflow='hidden'
                                 bg={cardBg}
+                                shadow={"xl"}
                                 _hover={{ boxShadow: "2xl" }}>
                                 <Image
                                     src={LibreImage.src} />
@@ -83,6 +84,7 @@ export const Portfolio = () => {
                                 borderRadius='lg'
                                 overflow='hidden'
                                 bg={cardBg}
+                                shadow={"xl"}
                                 _hover={{ boxShadow: "2xl" }}>
                                 <Image
                                     src={ElonButAIImage.src} />
@@ -116,6 +118,7 @@ export const Portfolio = () => {
                                 borderRadius='lg'
                                 overflow='hidden'
                                 bg={cardBg}
+                                shadow={"xl"}
                                 _hover={{ boxShadow: "2xl" }}>
                                 <Image
                                     src={NYCBasics.src} />
