@@ -5,7 +5,7 @@ import { Portfolio } from './Portfolio';
 import { Toolbox } from './Toolbox';
 import BgImageLight from '../assets/background-light.jpeg';
 import BgImageDark from '../assets/background-dark.jpeg';
-import { Container, Box, useColorMode, Center } from '@chakra-ui/react'
+import { Container, Box, useColorMode, Center, Text } from '@chakra-ui/react'
 import { MainMenu } from './MainMenu';
 
 export const App = () => {
@@ -30,6 +30,13 @@ export const App = () => {
                         <About />
                         <Portfolio />
                         <Toolbox />
+                        <Center>
+                            <Text
+                                pb={10}
+                                fontFamily="mosk-500"
+                            >Made with ❤️ by me.
+                            </Text>
+                        </Center>
                         <hr></hr>
                     </Box>
                 </Center>
