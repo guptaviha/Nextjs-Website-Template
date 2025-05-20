@@ -1,10 +1,15 @@
-// lib/posts.js
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
 
 const postsDirectory = path.join(process.cwd(), 'data/posts');
+
+type PostData = {
+  slug: string;
+  date: string;
+  [key: string]: any;
+};
 
 export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
@@ -16,7 +21,7 @@ export function getSortedPostsData() {
 
     return {
       slug,
-      ...matterResult.data,
+      ...(matterResult.data as PostData),
       content: matterResult.content,
     };
   });

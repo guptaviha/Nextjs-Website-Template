@@ -8,7 +8,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../../theme/theme';
 import * as DATA from '../../../data/data';
 import Link from 'next/link';
-import { getSortedPostsData } from '../../components/posts';
+import { getSortedPostsData } from '../../components/Posts';
 import { Button, ButtonGroup } from '@chakra-ui/react';
 
 
