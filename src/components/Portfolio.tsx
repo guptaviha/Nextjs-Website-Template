@@ -51,7 +51,7 @@ export const Portfolio = () => {
                                 overflow='hidden'
                                 bg={cardBg}
                                 shadow={"xl"}
-                                _hover={{ boxShadow: "2xl" }}>
+                                _hover={{ boxShadow: "2xl", cursor: "pointer" }}>
                                 <Image
                                     src={LibreImage.src} />
                                 <hr></hr>
@@ -85,7 +85,7 @@ export const Portfolio = () => {
                                 overflow='hidden'
                                 bg={cardBg}
                                 shadow={"xl"}
-                                _hover={{ boxShadow: "2xl" }}>
+                                _hover={{ boxShadow: "2xl", cursor: "pointer"  }}>
                                 <Image
                                     src={ElonButAIImage.src} />
                                 <hr></hr>
@@ -119,7 +119,7 @@ export const Portfolio = () => {
                                 overflow='hidden'
                                 bg={cardBg}
                                 shadow={"xl"}
-                                _hover={{ boxShadow: "2xl" }}>
+                                _hover={{ boxShadow: "2xl", cursor: "pointer"  }}>
                                 <Image
                                     src={NYCBasics.src} />
                                 <hr></hr>

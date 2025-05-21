@@ -2,7 +2,8 @@
 title: "The Lipstick Effect"
 desc: "A look into consumer behavior."
 date: "2025-05-19"
-pinned: "no"
+pin: "no"
+publish: "no"
 ---
 
 Hello World,  
@@ -13,4 +14,4 @@ After the 2001 Attacks, Estée Lauder noted their company sales of lipstick went
 &nbsp;  
 Why am I talking about Lipstick?  
 &nbsp;  
-I believe this hypothesis works outside the cosmetic industry. Due to the US tax war, 2025 has been a rocky year economically. So where do people turn to? The answer is board games.
+I believe this hypothesis works outside the cosmetic industry. Due to the US tax war, 2025 has been a rocky year economically. So where do people turn to? The answer is **board games**.

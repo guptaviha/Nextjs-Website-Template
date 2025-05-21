@@ -29,8 +29,9 @@ export default function Index({ allPostsData }) {
     const POSTS_PER_PAGE = 6;
     const [currentPage, setCurrentPage] = React.useState(1);
 
-    const pinnedPosts = allPostsData.filter(post => post.pinned === 'yes');
-    const unpinnedPosts = allPostsData.filter(post => post.pinned !== 'yes');
+    const allPublishedPosts = allPostsData.filter(post => post.publish === 'yes');
+    const pinnedPosts = allPublishedPosts.filter(post => post.pin === 'yes');
+    const unpinnedPosts = allPublishedPosts.filter(post => post.pin !== 'yes');
 
     const totalPages = Math.ceil(unpinnedPosts.length / POSTS_PER_PAGE);
 
@@ -106,7 +107,7 @@ export default function Index({ allPostsData }) {
                                                                 overflow='hidden'
                                                                 bg={cardBg}
                                                                 shadow={"xl"}
-                                                                _hover={{ boxShadow: "2xl" }}
+                                                                _hover={{ boxShadow: "2xl", cursor: "pointer" }}
                                                             >
                                                                 <StarIcon
                                                                     color="yellow.400"
@@ -148,96 +149,96 @@ export default function Index({ allPostsData }) {
                             )}
 
                             {/* App Other Posts */}
+                            {unpinnedPosts.length > 0 && (
+                                <Accordion defaultIndex={[0]} allowMultiple>
+                                    <AccordionItem>
+                                        <Box mb={10}>
+                                            <AccordionButton>
+                                                <Text fontSize="lg" fontFamily="mosk-700" >
+                                                    📝 More Posts
+                                                </Text>
+                                                <AccordionIcon />
+                                            </AccordionButton>
+                                            <AccordionPanel pb={10}>
+                                                <SimpleGrid
+                                                    columns={{ base: 1, md: 2, lg: 3 }}
+                                                    columnGap="4" rowGap="4"
+                                                >
+                                                    {paginatedPosts?.map(({ slug, title, date, desc }) => (
 
-                            <Accordion defaultIndex={[0]} allowMultiple>
-                                <AccordionItem>
-                                    <Box mb={10}>
-                                        <AccordionButton>
-                                            <Text fontSize="lg" fontFamily="mosk-700" >
-                                                📝 More Posts
-                                            </Text>
-                                            <AccordionIcon />
-                                        </AccordionButton>
-                                        <AccordionPanel pb={10}>
-                                            <SimpleGrid
-                                                columns={{ base: 1, md: 2, lg: 3 }}
-                                                columnGap="4" rowGap="4"
-                                            >
-                                                {paginatedPosts?.map(({ slug, title, date, desc }) => (
+                                                        <Link
+                                                            href={`/blog/${slug}`}
+                                                            target="_blank"
+                                                            rel="noopener"
+                                                            style={{ textDecoration: "none" }}>
+                                                            <Box
 
-                                                    <Link
-                                                        href={`/blog/${slug}`}
-                                                        target="_blank"
-                                                        rel="noopener"
-                                                        style={{ textDecoration: "none" }}>
-                                                        <Box
-
-                                                            maxW={{ base: 'sm', md: 'xl' }}
-                                                            borderWidth='1px'
-                                                            borderRadius='lg'
-                                                            overflow='hidden'
-                                                            bg={cardBg}
-                                                            shadow={"xl"}
-                                                            _hover={{ boxShadow: "2xl" }}>
-                                                            <hr></hr>
-                                                            <Box p='6'>
-                                                                <Box
-                                                                    as='span'
-                                                                    fontSize='sm'>
-                                                                    {date}
-                                                                </Box>
-                                                                <Box
-                                                                    mt='1'
-                                                                    fontFamily="mosk-700"
-                                                                    as='h3'
-                                                                    lineHeight='tight'
-                                                                    noOfLines={1}>
-                                                                    {title}
-                                                                </Box>
-                                                                <Box
-                                                                    as='h6'
-                                                                    fontSize='md'
-                                                                    noOfLines={2}>
-                                                                    {desc}
+                                                                maxW={{ base: 'sm', md: 'xl' }}
+                                                                borderWidth='1px'
+                                                                borderRadius='lg'
+                                                                overflow='hidden'
+                                                                bg={cardBg}
+                                                                shadow={"xl"}
+                                                                _hover={{ boxShadow: "2xl", cursor: "pointer" }}>
+                                                                <hr></hr>
+                                                                <Box p='6'>
+                                                                    <Box
+                                                                        as='span'
+                                                                        fontSize='sm'>
+                                                                        {date}
+                                                                    </Box>
+                                                                    <Box
+                                                                        mt='1'
+                                                                        fontFamily="mosk-700"
+                                                                        as='h3'
+                                                                        lineHeight='tight'
+                                                                        noOfLines={1}>
+                                                                        {title}
+                                                                    </Box>
+                                                                    <Box
+                                                                        as='h6'
+                                                                        fontSize='md'
+                                                                        noOfLines={2}>
+                                                                        {desc}
+                                                                    </Box>
                                                                 </Box>
                                                             </Box>
-                                                        </Box>
-                                                    </Link>
+                                                        </Link>
 
-                                                ))}
-                                            </SimpleGrid>
-                                            {/* Pagination Menu */}
-                                            <Center mt={8}>
-                                                <ButtonGroup>
-                                                    <Button
-                                                        onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-                                                        isDisabled={currentPage === 1}
-                                                    >
-                                                        Previous
-                                                    </Button>
-                                                    {[...Array(totalPages)].map((_, idx) => (
-                                                        <Button
-                                                            key={idx}
-                                                            onClick={() => setCurrentPage(idx + 1)}
-                                                            isActive={currentPage === idx + 1}
-                                                            variant={currentPage === idx + 1 ? "solid" : "outline"}
-                                                        >
-                                                            {idx + 1}
-                                                        </Button>
                                                     ))}
-                                                    <Button
-                                                        onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-                                                        isDisabled={currentPage === totalPages}
-                                                    >
-                                                        Next
-                                                    </Button>
-                                                </ButtonGroup>
-                                            </Center>
-                                        </AccordionPanel>
-                                    </Box>
-                                </AccordionItem>
-                            </Accordion>
-
+                                                </SimpleGrid>
+                                                {/* Pagination Menu */}
+                                                <Center mt={8}>
+                                                    <ButtonGroup>
+                                                        <Button
+                                                            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                                                            isDisabled={currentPage === 1}
+                                                        >
+                                                            Previous
+                                                        </Button>
+                                                        {[...Array(totalPages)].map((_, idx) => (
+                                                            <Button
+                                                                key={idx}
+                                                                onClick={() => setCurrentPage(idx + 1)}
+                                                                isActive={currentPage === idx + 1}
+                                                                variant={currentPage === idx + 1 ? "solid" : "outline"}
+                                                            >
+                                                                {idx + 1}
+                                                            </Button>
+                                                        ))}
+                                                        <Button
+                                                            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+                                                            isDisabled={currentPage === totalPages}
+                                                        >
+                                                            Next
+                                                        </Button>
+                                                    </ButtonGroup>
+                                                </Center>
+                                            </AccordionPanel>
+                                        </Box>
+                                    </AccordionItem>
+                                </Accordion>
+                            )}
                         </Box>
                     </Box>
                 </Center>
