@@ -90,7 +90,7 @@ export default function Index({ allPostsData }) {
                                             </AccordionButton>
 
                                             <AccordionPanel pb={10}>
-                                                <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} columnGap="4" rowGap="4">
+                                                <SimpleGrid columns={{ base: 1, lg: 2, xl: 3 }} columnGap="4" rowGap="4">
                                                     {pinnedPosts.map(({ slug, title, date, desc }) => (
                                                         <Link
                                                             key={slug}
@@ -111,7 +111,7 @@ export default function Index({ allPostsData }) {
                                                             >
                                                                 <StarIcon
                                                                     color="yellow.400"
-                                                                    boxSize={6}
+                                                                    boxSize={4}
                                                                     position="absolute"
                                                                     top={6}
                                                                     right={6}
@@ -161,7 +161,7 @@ export default function Index({ allPostsData }) {
                                             </AccordionButton>
                                             <AccordionPanel pb={10}>
                                                 <SimpleGrid
-                                                    columns={{ base: 1, md: 2, lg: 3 }}
+                                                    columns={{ base: 1, lg: 2, xl: 3 }}
                                                     columnGap="4" rowGap="4"
                                                 >
                                                     {paginatedPosts?.map(({ slug, title, date, desc }) => (
