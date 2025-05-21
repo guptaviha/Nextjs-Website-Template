@@ -86,4 +86,4 @@ export const AWS_LABEL = "AWS"
 
 // Blog
 export const BLOG_TITLE = "Vee's Musings"
-export const BLOG_DESC = `Here's is where I share my thoughts.`
+export const BLOG_DESC = `Here is where I share my thoughts.`
