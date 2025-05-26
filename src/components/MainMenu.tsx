@@ -81,6 +81,7 @@ export const MainMenu = () => {
                         </Link>
 
                         <Link
+                            data-umami-event="Resume Menu Click"
                             href={DATA.RESUME_SRC}
                             target="_blank"
                             style={{ textDecoration: "none" }}

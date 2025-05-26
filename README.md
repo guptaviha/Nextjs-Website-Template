@@ -30,29 +30,12 @@ Made possible thanks to the following free asset resources
  - [GitHub](https://github.com/brave/brave-browser/issues/8061)
  - [Fonts](https://www.cufonfonts.com/font/mosk)
 
- ---
+## Disable analytics on your browser
 
-## Tasks
+```localStorage.setItem('umami.disabled', 1);```
 
-### TO DO List
-- [ ] Change toolbox logic from stack to flex
-- [ ] Try out Vercel for analytics
-- [ ] Snap when scrolling? - buggy 
-- [ ] Dark and light mode screenshots
-- [ ] Submit to nextjs as a template
-- [ ] Find better nav bar transitions - optional
-- [ ] Dark mode btn transition - optional
+## Enable analytics on your browser
 
-### Completed
-- [x] Export all data to a central file
-- [x] Set maxWidth for when the screen is wide
-- [x] Add labels under toolbox tools
-- [x] Dynamic subtitles on intro page
-- [x] Responsive design
-- [x] Upgrade fonts to Mosk
-- [x] Add dark mode support
-- [x] Animate scroll on toolbar click
-- [x] Add resume link
-- [x] Copy to clipboard for email
+```localStorage.removeItem('umami.disabled');```
 
 
