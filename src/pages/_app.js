@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Script
         async
-        src="www.analytics.vihagupta.com"
+        src="https://analytics.vihagupta.com/script.js"
         data-website-id="daf0599d-b7ea-4697-bdf9-98dbb59ea77c"
       />
     </>
