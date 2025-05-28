@@ -8,6 +8,10 @@ const postsDirectory = path.join(process.cwd(), 'data/posts');
 type PostData = {
   slug: string;
   date: string;
+  title: string;
+  desc: string;
+  pin: string;
+  publish: string;
   [key: string]: any;
 };
 
