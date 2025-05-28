@@ -22,7 +22,8 @@ export const App = () => {
                 maxWidth="100%"
                 scrollSnapType="y proximity"
                 scrollPaddingTop="15vh"
-                overflowY="scroll">
+                // overflowY="scroll"
+                >
                 <Center>
                     <Box maxWidth="1200px" >
                         <MainMenu />

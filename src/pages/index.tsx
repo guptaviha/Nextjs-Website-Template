@@ -1,19 +1,20 @@
 import * as React from 'react';
 import { App } from '../components/App';
 import Head from 'next/head';
-import * as DATA from '../../data/data';
 import Layout from './layout';
+
+const appTitle = "Viha Gupta"
 export default function Index() {
 
   return (
     <>
       <Head>
-        <title>{DATA.APP_TITLE}</title>
-        <meta name="keywords" content={DATA.APP_TITLE}></meta>
+        <title>{appTitle}</title>
+        <meta name="keywords" content={appTitle}></meta>
         <meta httpEquiv='X-UA-Compatible' content='IE=edge'></meta>
-        <meta property="og:title" content={DATA.APP_TITLE} />
-        <meta property="og:description" content={DATA.APP_DESC} />
-        <meta property="og:image" content={DATA.OG_IMAGE_SRC} />
+        <meta property="og:title" content={appTitle} />
+        <meta property="og:description" content={"Welcome to my corner of the web!"} />
+        <meta property="og:image" content={"https://i.ibb.co/s9vx1g5/og-image.png"} />
         <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0' />
       </Head>
       <App />

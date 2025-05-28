@@ -61,13 +61,13 @@ export default function Index({ allPostsData }) {
                             <Text
                                 fontSize="2xl"
                                 fontFamily="mosk-800">
-                                {DATA.BLOG_TITLE}
+                                {"Vee's Musings"}
                             </Text>
                             {/* <br></br> */}
                             <Text
                                 fontSize="xl"
                                 fontFamily="mosk-400">
-                                {DATA.BLOG_DESC}
+                                {"Here is where I share my thoughts."}
                             </Text>
                             <br></br>
                         </Box>

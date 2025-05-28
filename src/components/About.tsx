@@ -2,7 +2,6 @@ import * as React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
 import { Box, Text, Stack, IconButton, Link, useToast, Center } from '@chakra-ui/react'
-import * as DATA from '../../data/data';
 
 export const About = () => {
 
@@ -22,13 +21,16 @@ export const About = () => {
                     <Text
                         fontSize="2xl"
                         fontFamily="mosk-800">
-                        {DATA.ABOUT_TITLE}
+                        {"About Me"}
                     </Text>
                     <br></br>
                     <Text
                         fontSize="xl"
                         fontFamily="mosk-400">
-                        {DATA.ABOUT_DESC}
+                        {`Say hello to the next newest additon to your team. I'm Viha 
+                        Gupta, a zealous Software Dev based in NYC. As a recent CS grad with prior 
+                        work ex, I'm ready to dive head-first into changing the world, one semicolon 
+                        at a time. Give me a shot and let's rock the corporate world together.`}
                     </Text>
                     <br></br>
 
@@ -40,7 +42,7 @@ export const About = () => {
                                 spacing="50px" >
 
                                 <Link
-                                    href={DATA.GITHUB_SRC}
+                                    href={"https://github.com/guptaviha/"}
                                     target="_blank"
                                     rel="noopener">
                                     <IconButton
@@ -55,7 +57,7 @@ export const About = () => {
                                 </Link>
 
                                 <Link
-                                    href={DATA.LINKEDIN_SRC}
+                                    href={"https://www.linkedin.com/in/guptaviha/"}
                                     target="_blank"
                                     rel="noopener">
                                     <IconButton
@@ -72,9 +74,9 @@ export const About = () => {
                                 <IconButton
                                     _focus={{ outline: "none" }}
                                     onClick={() => {
-                                        navigator.clipboard.writeText(DATA.EMAIL);
+                                        navigator.clipboard.writeText("vg2237@nyu.edu");
                                         toast({
-                                            title: DATA.EMAIL_TOAST_TXT,
+                                            title: "vg2237@nyu.edu copied to clipboard.",
                                             status: 'success',
                                             duration: 5500,
                                             position: 'top',

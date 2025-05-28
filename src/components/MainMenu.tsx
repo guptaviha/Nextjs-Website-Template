@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
-import { Box, Stack, Link, Text, IconButton } from '@chakra-ui/react'
+import { Box, Stack, IconButton } from '@chakra-ui/react'
 import { useColorMode, Center } from '@chakra-ui/react'
-import * as DATA from '../../data/data';
+import { MenuItem } from './MenuItem';
 
 export const MainMenu = () => {
 
@@ -20,80 +20,36 @@ export const MainMenu = () => {
                         direction="row"
                         spacing={{ base: '2', sm: '6', md: '10', lg: '14' }} >
 
-                        <Link
-                            href="/#Intro"
-                            style={{ textDecoration: "none" }}>
-                            <Text
-                                fontSize={{ base: 'sm', sm: 'md' }}
-                                fontFamily="mosk-600"
-                                _hover={{ transform: "scale(1.1)" }}
-                                style={{ transition: "transform .5s ease-in-out" }} >
-                                {DATA.HOME_MENU}
-                            </Text>
-                        </Link>
+                        <MenuItem
+                            linkSrc={"/#Intro"}
+                            text={"Home"}
+                        />
 
-                        <Link
-                            href="/#About"
-                            style={{ textDecoration: "none" }}>
-                            <Text
-                                fontSize={{ base: 'sm', sm: 'md' }}
-                                fontFamily="mosk-600"
-                                _hover={{ transform: "scale(1.1)" }}
-                                style={{ transition: "transform .5s ease-in-out" }}>
-                                {DATA.ABOUT_MENU}
-                            </Text>
-                        </Link>
+                        <MenuItem
+                            linkSrc={"/#About"}
+                            text={"About"}
+                        />
 
-                        <Link
-                            href="/#Portfolio"
-                            style={{ textDecoration: "none" }}>
-                            <Text
-                                fontSize={{ base: 'sm', sm: 'md' }}
-                                fontFamily="mosk-600"
-                                _hover={{ transform: "scale(1.1)" }}
-                                style={{ transition: "transform .5s ease-in-out" }}>
-                                {DATA.PORTFOLIO_MENU}
-                            </Text>
-                        </Link>
+                        <MenuItem
+                            linkSrc={"/#Portfolio"}
+                            text={"Portfolio"}
+                        />
 
-                        <Link
-                            href="/#Toolbox"
-                            style={{ textDecoration: "none" }}>
-                            <Text
-                                fontSize={{ base: 'sm', sm: 'md' }}
-                                fontFamily="mosk-600"
-                                _hover={{ transform: "scale(1.1)" }}
-                                style={{ transition: "transform .5s ease-in-out" }}>
-                                {DATA.TOOLBOX_MENU}
-                            </Text>
-                        </Link>
+                        <MenuItem
+                            linkSrc={"/#Toolbox"}
+                            text={"Toolbox"}
+                        />
 
-                        <Link
-                            href="/blog"
-                            style={{ textDecoration: "none" }}>
-                            <Text
-                                fontSize={{ base: 'sm', sm: 'md' }}
-                                fontFamily="mosk-600"
-                                _hover={{ transform: "scale(1.1)" }}
-                                style={{ transition: "transform .5s ease-in-out" }}>
-                                {DATA.BLOG_MENU}
-                            </Text>
-                        </Link>
+                        <MenuItem
+                            linkSrc={"/blog"}
+                            text={"Blog"}
+                        />
 
-                        <Link
-                            data-umami-event="Resume Menu Click"
-                            href={DATA.RESUME_SRC}
-                            target="_blank"
-                            style={{ textDecoration: "none" }}
-                            rel="noopener">
-                            <Text
-                                fontSize={{ base: 'sm', sm: 'md' }}
-                                fontFamily="mosk-600"
-                                _hover={{ transform: "scale(1.1)" }}
-                                style={{ transition: "transform .5s ease-in-out" }}>
-                                {DATA.RESUME_MENU}
-                            </Text>
-                        </Link>
+                        <MenuItem
+                            umamiEvent={"Resume Menu Click"}
+                            linkSrc={"https://drive.google.com/file/d/1adbVEQlOiig7DPj63MIAwBXMHYW7_RSZ/view?usp=sharing"}
+                            text={"Resume"}
+                        />
 
                         <IconButton
                             _focus={{ outline: "none" }}

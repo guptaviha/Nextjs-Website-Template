@@ -2,9 +2,18 @@ import * as React from 'react';
 import AvatarImage from '../../src/assets/avatar.png';
 import { Box, Stack, Text, Avatar } from '@chakra-ui/react'
 import { Center } from '@chakra-ui/react'
-import * as DATA from '../../data/data';
 
 let currSubIdx = 0;
+
+const SUBS = [
+    'stackoverflow copy-n-paste expert 👩🏾‍💻',
+    'part-time ukulele enthusiast 🎵',
+    'figure skating novice ⛸',
+    'Wikipedia rabbit-hole victim 📗',
+    'nature documentary nerd 🌎',
+    'ardent TraderJoes explorer 🛒',
+    'occasional painting dilettante 🎨'
+];
 
 export const Intro = () => {
 
@@ -14,7 +23,7 @@ export const Intro = () => {
         setInterval(async () => {
             setTransitionClassName('fade-out');
             setTimeout(() => {
-                const newIdx = currSubIdx === DATA.SUBS.length - 1 ? 0 : currSubIdx + 1;
+                const newIdx = currSubIdx === SUBS.length - 1 ? 0 : currSubIdx + 1;
                 currSubIdx = newIdx;
                 setTransitionClassName('fade-in');
             }, 200);
@@ -36,7 +45,7 @@ export const Intro = () => {
                         {/* Avatar Part */}
                         <Center>
                             <Avatar
-                                name={DATA.AVATAR_NAME}
+                                name={"Viha Gupta"}
                                 src={AvatarImage.src}
                                 width={{ base: '150px', md: '150px', lg: '200px' }}
                                 height={{ base: '150px', md: '150px', lg: '200px' }}
@@ -50,14 +59,14 @@ export const Intro = () => {
                                 <Text
                                     fontSize={{ base: '4xl', md: '5xl' }}
                                     fontFamily="mosk-800">
-                                    {DATA.GREETING_TXT}
+                                    {"👋🏽 Hi, I'm Viha!"}
                                 </Text>
                             </Center>
                             <br></br>
                             <Text
                                 fontSize={{ base: 'xl', md: '2xl' }}
                                 fontFamily="mosk-600">
-                                {DATA.INTRO_TITLE}
+                                {"Your friendly neighborhood Software Dev"}
                             </Text>
 
                             <Stack
@@ -67,7 +76,7 @@ export const Intro = () => {
                                     id="subs-text"
                                     fontFamily="mosk-600"
                                     className={transitionClassName}>
-                                    and {DATA.SUBS[currSubIdx]}
+                                    and {SUBS[currSubIdx]}
                                 </Text>
                             </Stack>
 
