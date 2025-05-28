@@ -3,7 +3,6 @@ import BgImageLight from '../../assets/background-light.jpeg';
 import BgImageDark from '../../assets/background-dark.jpeg';
 import { Container, Box, useColorMode, Center, Text, SimpleGrid } from '@chakra-ui/react'
 import { MainMenu } from '../../components/MainMenu';
-import * as DATA from '../../../data/data';
 import Link from 'next/link';
 import { getSortedPostsData } from '../../components/Posts';
 import { Button, ButtonGroup } from '@chakra-ui/react';
