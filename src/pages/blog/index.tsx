@@ -9,6 +9,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 import Layout from '../layout';
 import { Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from "@chakra-ui/react"
 import { StarIcon } from '@chakra-ui/icons';
+import { BlogCard } from '../../components/BlogCard';
 
 
 
@@ -62,7 +63,7 @@ export default function Index({ allPostsData }) {
                                 fontFamily="mosk-800">
                                 {"Vee's Musings"}
                             </Text>
-                            {/* <br></br> */}
+
                             <Text
                                 fontSize="xl"
                                 fontFamily="mosk-400">
@@ -91,54 +92,14 @@ export default function Index({ allPostsData }) {
                                             <AccordionPanel pb={10}>
                                                 <SimpleGrid columns={{ base: 1, lg: 2, xl: 3 }} columnGap="4" rowGap="4">
                                                     {pinnedPosts.map(({ slug, title, date, desc }) => (
-                                                        <Link
-                                                            key={slug}
-                                                            href={`/blog/${slug}`}
-                                                            target="_blank"
-                                                            rel="noopener"
-                                                            style={{ textDecoration: "none" }}
-                                                        >
-                                                            <Box
-                                                                position="relative"
-                                                                maxW={{ base: 'sm', md: 'xl' }}
-                                                                borderWidth='1px'
-                                                                borderRadius='lg'
-                                                                overflow='hidden'
-                                                                bg={cardBg}
-                                                                shadow={"xl"}
-                                                                _hover={{ boxShadow: "2xl", cursor: "pointer" }}
-                                                            >
-                                                                <StarIcon
-                                                                    color="yellow.400"
-                                                                    boxSize={4}
-                                                                    position="absolute"
-                                                                    top={6}
-                                                                    right={6}
-                                                                    zIndex={1}
-                                                                />
-                                                                <Box p='6'>
-                                                                    <Box
-                                                                        as='span'
-                                                                        fontSize='sm'>
-                                                                        {date}
-                                                                    </Box>
-                                                                    <Box
-                                                                        mt='1'
-                                                                        fontFamily="mosk-700"
-                                                                        as='h3'
-                                                                        lineHeight='tight'
-                                                                        noOfLines={1}>
-                                                                        {title}
-                                                                    </Box>
-                                                                    <Box
-                                                                        as='h6'
-                                                                        fontSize='md'
-                                                                        noOfLines={2}>
-                                                                        {desc}
-                                                                    </Box>
-                                                                </Box>
-                                                            </Box>
-                                                        </Link>
+                                                        <BlogCard
+                                                            slug={slug}
+                                                            cardBg={cardBg}
+                                                            date={date}
+                                                            title={title}
+                                                            desc={desc}
+                                                            pinned={true}
+                                                        />
                                                     ))}
                                                 </SimpleGrid>
                                             </AccordionPanel>
@@ -164,46 +125,14 @@ export default function Index({ allPostsData }) {
                                                     columnGap="4" rowGap="4"
                                                 >
                                                     {paginatedPosts?.map(({ slug, title, date, desc }) => (
-
-                                                        <Link
-                                                            href={`/blog/${slug}`}
-                                                            target="_blank"
-                                                            rel="noopener"
-                                                            style={{ textDecoration: "none" }}>
-                                                            <Box
-
-                                                                maxW={{ base: 'sm', md: 'xl' }}
-                                                                borderWidth='1px'
-                                                                borderRadius='lg'
-                                                                overflow='hidden'
-                                                                bg={cardBg}
-                                                                shadow={"xl"}
-                                                                _hover={{ boxShadow: "2xl", cursor: "pointer" }}>
-                                                                <hr></hr>
-                                                                <Box p='6'>
-                                                                    <Box
-                                                                        as='span'
-                                                                        fontSize='sm'>
-                                                                        {date}
-                                                                    </Box>
-                                                                    <Box
-                                                                        mt='1'
-                                                                        fontFamily="mosk-700"
-                                                                        as='h3'
-                                                                        lineHeight='tight'
-                                                                        noOfLines={1}>
-                                                                        {title}
-                                                                    </Box>
-                                                                    <Box
-                                                                        as='h6'
-                                                                        fontSize='md'
-                                                                        noOfLines={2}>
-                                                                        {desc}
-                                                                    </Box>
-                                                                </Box>
-                                                            </Box>
-                                                        </Link>
-
+                                                        <BlogCard
+                                                            slug={slug}
+                                                            cardBg={cardBg}
+                                                            date={date}
+                                                            title={title}
+                                                            desc={desc}
+                                                            pinned={false}
+                                                        />
                                                     ))}
                                                 </SimpleGrid>
                                                 {/* Pagination Menu */}
