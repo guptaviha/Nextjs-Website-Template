@@ -27,10 +27,7 @@ export const About = () => {
                     <Text
                         fontSize="xl"
                         fontFamily="mosk-400">
-                        {`Say hello to the next newest additon to your team. I'm Viha 
-                        Gupta, a zealous Software Dev based in NYC. As a recent CS grad with prior 
-                        work ex, I'm ready to dive head-first into changing the world, one semicolon 
-                        at a time. Give me a shot and let's rock the corporate world together.`}
+                        {`Hello there! I'm a full-stack web developer based in NY. I'm passionate about building intuitive software that doesn't suck. Let's connect and chat about how I can help solve your tech challenges.`}
                     </Text>
                     <br></br>
 

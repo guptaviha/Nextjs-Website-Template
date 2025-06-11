@@ -47,7 +47,7 @@ export const MainMenu = () => {
 
                         <MenuItem
                             umamiEvent={"Resume Menu Click"}
-                            linkSrc={"https://drive.google.com/file/d/1adbVEQlOiig7DPj63MIAwBXMHYW7_RSZ/view?usp=sharing"}
+                            linkSrc={"https://drive.google.com/file/d/10mMrzf43L-OpWnUoR4zGrxwQJU9Kfb3K/view?usp=sharing"}
                             text={"Resume"}
                         />
 
