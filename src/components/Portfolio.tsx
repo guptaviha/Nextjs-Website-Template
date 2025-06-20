@@ -57,7 +57,7 @@ export const Portfolio = () => {
 
                         <PortfolioCard
                             cardBg={cardBg}
-                            link_src={"https://libre.ink"}
+                            link_src={"https://libre-ink.vercel.app/"}
                             img_src={LibreImage.src}
                             title={"libre.ink"}
                             desc={"A uniquely instant anonymous blogging website. Everything you type lives in the URL."}
